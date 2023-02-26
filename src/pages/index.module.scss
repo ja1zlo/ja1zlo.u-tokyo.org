@@ -1,0 +1,48 @@
+#article {
+  margin: 0 !important;
+}
+#content {
+  display: flex;
+  width: 100%;
+
+  #main {
+    width: 400px;
+    padding: 20px;
+
+    nav {
+      ul {
+        padding-left: 1em;
+      }
+      &>ul>li {
+        list-style: none;
+        &::before {
+          content: "■";
+          margin-right: 10px;
+        }
+        &>ul>li {
+          list-style: none;
+          &::before {
+            content: "□";
+            margin-right: 10px;
+          }
+        }
+      }
+    }
+  }
+
+  #side {
+    width: 300px;
+    margin-left: 20px;
+
+    border-left: 2px solid #ccc;
+
+    h2 {
+      background-color: #ccc;
+      margin-top: 0;
+    }
+    p {
+      margin-left: 5px;
+    }
+  }
+
+}
