@@ -1,3 +1,6 @@
+* {
+  box-sizing: border-box;
+}
 html, body {
   margin: 0;
   padding: 0;
@@ -16,8 +19,6 @@ body {
 
 header {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
   grid-template-areas:
     "logo address"
     "bar bar";
@@ -43,7 +44,7 @@ header {
   }
 }
 
-main {
+main > article {
   margin: 20px;
 }
 
