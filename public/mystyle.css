@@ -1,0 +1,205 @@
+a:hover {  position: relative; clip:        rect(   ); text-decoration: none; visibility: visible; color: #FF0000; z-index: +1; left: 1px; top: 1px}
+a:link {  text-decoration: none; clip:   rect(   )}
+a:visited {  text-decoration: none}
+a:active {  text-decoration: none}
+
+/* 見出しスタイル設定 */
+
+.headline1 {
+    width: 500px;
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 50px;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444444;
+}
+
+.headline2 {
+    width:120px; 
+    color: #444444; 
+    background: #c6e4ff;
+    border-bottom: 3px solid #aac5de;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+} 
+
+/* スケジュール箇条書き設定 */
+
+.list_sche-wrap {
+    list-style:  none;
+    margin:  0;
+    padding: 0;
+}
+ 
+.list_sche:before {
+    content:  "";
+    width:  10px;
+    height:  10px;
+    display:  inline-block;
+    background-color: #4682b4;
+    border-radius:  50%;
+}
+
+
+/*切替タブ設定*/
+
+/*全体のスタイル*/
+.tabs {
+    margin-top: 20px;
+    padding-bottom: 40px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    width: 600px;
+    margin-left: 50px;
+}
+  
+/*タブのスタイル*/
+.tab_item {
+  width: calc(100%/3);
+  height: 50px;
+  border-bottom: 3px solid #4682b4;
+  background-color: #d9d9d9;
+  line-height: 50px;
+  font-size: 16px;
+  text-align: center;
+  color: #565656;
+  display: block;
+  float: left;
+  text-align: center;
+  font-weight: bold;
+  transition: all 0.2s ease;
+  cursor: pointer;
+}
+.tab_item:hover {
+  opacity: 0.75;
+}
+
+/*ラジオボタンを全て消す*/
+input[name="tab_item"] {
+  display: none;
+}
+
+/*タブ切り替えの中身のスタイル*/
+.tab_content {
+  display: none;
+  padding: 40px 0 0;
+  clear: both;
+  overflow: hidden;
+}
+
+
+/*選択されているタブのコンテンツのみを表示*/
+#intro:checked ~ #intro_content,
+#schedule:checked ~ #schedule_content,
+#gallery:checked ~ #gallery_content {
+  display: block;
+}
+
+/*選択されているタブのスタイルを変える*/
+.tabs input:checked + .tab_item {
+  background-color: #4682b4;
+  color: #fff;
+}
+
+
+
+/* ギャラリーのポップアップ部分 */
+
+/* 全体の設定 */
+.pop-box {
+  display: inline-block;
+}
+
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: rgba(0, 0, 0, .8);
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  color: #FFF;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  
+  overflow-y: auto;
+}
+
+/* 閉じるボタン */
+.btn-close{
+  background: #444444;
+  border-radius: 10px;
+  color: #fff;
+  padding: 10px;
+  cursor: pointer;
+  margin: 10px auto;
+  width: 60%;
+  text-align: center;
+}
+
+/* 開くボタン */
+.btn-open{
+  display: inline-block;
+  background: #fff;
+  color: #fff;
+  cursor: pointer;
+  margin: 2px;
+  width: 240px;
+  height: 180px;
+  text-align: center;
+}
+
+/* ポップアップの内容 */
+.popup-content{
+  margin: 40px auto 40px auto;
+  height: 80%;
+}
+
+/* チェックボックスの設定 */
+#popup-on_1{
+  display: none;
+}
+#popup-on_1:checked + .popup_1{
+  display: block;
+}
+
+#popup-on_2{
+  display: none;
+}
+#popup-on_2:checked + .popup_2{
+  display: block;
+}
+
+#popup-on_3{
+  display: none;
+}
+#popup-on_3:checked + .popup_3{
+  display: block;
+}
+
+#popup-on_4{
+  display: none;
+}
+#popup-on_4:checked + .popup_4{
+  display: block;
+}
+
+#popup-on_5{
+  display: none;
+}
+#popup-on_5:checked + .popup_5{
+  display: block;
+}
+
+#popup-on_6{
+  display: none;
+}
+#popup-on_6:checked + .popup_6{
+  display: block;
+}

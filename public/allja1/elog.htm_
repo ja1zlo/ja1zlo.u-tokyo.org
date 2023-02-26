@@ -1,0 +1,89 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<HTML lang=ja>
+<HEAD>
+<TITLE>Rule of 15th ALL JA1 Contest</TITLE>
+<META http-equiv="Content-Type" content="text/html; charset=iso-2022-jp">
+<META name="GENERATOR" content="IBM WebSphere Studio Homepage Builder Version 6.5.0.0 for Windows">
+<META http-equiv="Content-Style-Type" content="text/css">
+</HEAD>
+<BODY bgcolor="#ffffff" text="#000000" link="#0000FF" vlink="#005000" alink="#FF0000">
+<P><FONT size="+2">電子ログの作り方</FONT><BR>
+<FONT size="-2" color="#0066ff">電子ログがおわかりの方は読み飛ばしてください。</FONT><FONT size="-1"><BR>
+</FONT><FONT size="-2" color="#0066ff">分からない方はお問い合わせください。</FONT><BR>
+<BR>
+<FONT size="+1">１．ＰＣでロギング（ログを入力）</FONT><BR>
+○win版のzLogwでロギングした場合<BR>
+　***.zlo、例えば、allja1.zloというファイルが生成される。<BR>
+　（ここでは特にはやることはありません。）<BR>
+<BR>
+○Dos版のzLogcgでロギングした場合<BR>
+　***.bin、例えばzLogcgでロギングし、allja1.binという名前のファイルが生成される。<BR>
+　convcg.exe -gallja1として立ち上げ、allja1.txtというテキストのログファイル<BR>
+　に変換する。<BR>
+○手書き紙ログの場合。<BR>
+　zLogやzLogwのポストコンテストモードで紙からパソコンに打ち直す。<BR>
+　後は上のとおりで、***.zlo（win版）か、***.txt（DOS版）を生成します。<BR>
+<BR>
+<FONT size="+1">２．***.zloか***.txtから電子ログを生成する。</FONT><BR>
+○ZPRINTWを使用する<BR>
+　win版のZPRINTWを起動し、参加部門など必要事項を記入する。<BR>
+　　・zLogwから生成された***.zloを開いた場合は、上部のファイル(F)に<BR>
+　　　電子ログデータの表示（E）があるのでクリックすると、電子ログデータ<BR>
+　　　が表示される。<BR>
+　　・zLogから生成された***.txtを開いた場合は、電子ログデータの表示（E）<BR>
+　　　が表示されないことがある。その場合は 上書き保存（S）をクリックし保存<BR>
+　　　すると、***.txtと同じフォルダーに***.emというファイルができるので、<BR>
+　　　それをメモ帳などで開く。電子ログデータが表示される。<BR>
+<BR>
+〇ZPRINTWを使用しない。<BR>
+　<A href="http://www.jarl.or.jp/Japanese/1_Tanoshimo/1-1_Contest/e-log.htm" target="_top">JARLのページをご参照ください。</A><BR>
+<BR>
+<FONT size="+1">３．メールで提出する。<BR>
+</FONT>　２．で開いた電子ログデータを、編集（E）-全て選択（A）をクリックして<BR>
+　全て選択し、右クリックでコピーする。<BR>
+<BR>
+　お使いのメーラー（Outlookなど）を立ち上げる。<BR>
+<BR>
+　メールを新規作成する。タイトルを自分のコールサインと部門(High,Low）、<BR>
+　宛先を<A href="mailto:allja1@ja1zlo.u-tokyo.org">allja1@ja1zlo.u-tokyo.org</A>として、本文に先ほどコピーした<BR>
+　電子ログデータを右クリックで貼り付けする。<BR>
+<BR>
+　本文を見直してみて、ログなどに誤りがあったら訂正して送信する。<BR>
+</P>
+<HR>
+<Pre>例）<BR>
+Title: JI0VWL/0 (High)　　　　　←※Highバンド部門の場合<BR>To: <A href="mailto:allja1@ja1zlo.u-tokyo.org">allja1@ja1zlo.u-tokyo.org</A><BR><BR>
+</Pre>
+<PRE>&lt;SUMMARYSHEET VERSION=R1.0&gt;
+&lt;CONTESTNAME&gt;ALL JA1コンテスト&lt;/CONTESTNAME&gt;
+&lt;CATEGORYCODE&gt;　　&lt;/CATEGORYCODE&gt; 　　　←※なくてよい
+&lt;CATEGORYNAME&gt;管外シングルオペ、ハイバンド、マルチ電信&lt;/CATEGORYNAME&gt;
+&lt;CALLSIGN&gt;JI0VWL/0&lt;/CALLSIGN&gt;
+&lt;SCORE BAND=14MHz&gt;5,5,4&lt;/SCORE&gt;
+&lt;SCORE BAND=21MHz&gt;2,2,2&lt;/SCORE&gt;
+&lt;SCORE BAND=28MHz&gt;1,1,1&lt;/SCORE&gt;
+&lt;SCORE BAND=50MHz&gt;8,8,6&lt;/SCORE&gt;
+&lt;SCORE BAND=TOTAL&gt;16,16,13&lt;/SCORE&gt;
+&lt;TOTALSCORE&gt;208&lt;/TOTALSCORE&gt;
+&lt;ADDRESS&gt;〒000-0000 東京都〇〇市〇〇 0-0-0&lt;/ADDRESS&gt;
+&lt;TEL&gt;01-2345-6789&lt;/TEL&gt;
+&lt;NAME&gt;〇〇 〇〇&lt;/NAME&gt;
+&lt;EMAIL&gt;ji0vwl@jarl.com&lt;/EMAIL&gt;
+&lt;LICENSECLASS&gt;第1級アマチュア無線技士&lt;/LICENSECLASS&gt;
+&lt;POWER&gt;50&lt;/POWER&gt;
+&lt;POWERTYPE&gt;定格出力&lt;/POWERTYPE&gt;
+&lt;OPPLACE&gt;長野県長野市&lt;/OPPLACE&gt;
+&lt;POWERSUPPLY&gt;発動発電機&lt;/POWERSUPPLY&gt;
+&lt;EQUIPMENT&gt;TT-300S,RR-50,14-28=3ele,50=4ele&lt;/EQUIPMENT&gt;
+&lt;COMMENTS&gt;次回もがんばりたいと思います。&lt;/COMMENTS&gt;
+&lt;OATH&gt;私は，JARL制定のコンテスト規約および電波法令にしたがい運用た結果，ここに提出するサマリーシートおよびログシートなどが事実と相違ないものであることを，私の名誉において誓います。&lt;/OATH&gt;<BR>&lt;DATE&gt;2003年6月1日&lt;/DATE&gt;
+&lt;SIGNATURE&gt;〇〇 〇〇&lt;/SIGNATURE&gt;
+&lt;/SUMMARYSHEET&gt;
+&lt;LOGSHEET TYPE=ZLOG&gt;
+mon day time callsign sent   rcvd     multi  MHz mode pts memo
+6   1   0901 JA1YWX   59909  59100105 100105 14  CW   1 <BR>6   1   0910 JA1ZLO   59909  59100110 100110 50  CW   1<BR>・<BR>・以下省略<BR>・<BR>&lt;/LOGSHEET&gt;</PRE>
+<HR>
+<PRE>
+</PRE>
+<ADDRESS>今泉 憲 / JI0VWL &lt;ji0vwl@jarl.com&gt;</ADDRESS>
+</BODY></HTML> 

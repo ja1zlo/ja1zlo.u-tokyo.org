@@ -1,0 +1,4 @@
+drwxr-xr-x    2 20000    11000        4096 Feb 24  2013 .
+drwxr-xr-x    3 20000    11000        4096 Feb 24  2013 ..
+-rw-r--r--    1 20000    11000         598 Feb 24  2013 org.eclipse.jdt.core.prefs
+-rw-r--r--    1 20000    11000        6473 Feb 24  2013 org.eclipse.jdt.ui.prefs

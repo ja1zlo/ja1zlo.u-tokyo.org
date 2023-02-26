@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<rdf:RDF
+xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+xmlns:dc="http://purl.org/dc/elements/1.1/"
+xmlns:sy="http://purl.org/rss/1.0/modules/syndication/"
+xmlns:admin="http://webns.net/mvcb/"
+xmlns:cc="http://web.resource.org/cc/"
+xmlns="http://purl.org/rss/1.0/">
+
+<channel rdf:about="http://www.ja1zlo.u-tokyo.org/blog/">
+<title>JA1ZLO Weblog</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/</link>
+<description></description>
+<dc:language>ja</dc:language>
+<dc:creator></dc:creator>
+<dc:date>2005-06-08T19:20:12+09:00</dc:date>
+<admin:generatorAgent rdf:resource="http://www.movabletype.org/?v=3.151-ja" />
+
+
+<items>
+<rdf:Seq><rdf:li rdf:resource="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0608192012.html" />
+<rdf:li rdf:resource="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601192101.html" />
+<rdf:li rdf:resource="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601182123.html" />
+<rdf:li rdf:resource="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601172239.html" />
+<rdf:li rdf:resource="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154555.html" />
+<rdf:li rdf:resource="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154511.html" />
+<rdf:li rdf:resource="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154336.html" />
+</rdf:Seq>
+</items>
+
+</channel>
+
+<item rdf:about="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0608192012.html">
+<title>test</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0608192012.html</link>
+<description>現在部会中</description>
+<dc:subject>00100announce</dc:subject>
+<dc:creator>ja1zlo</dc:creator>
+<dc:date>2005-06-08T19:20:12+09:00</dc:date>
+</item>
+<item rdf:about="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601192101.html">
+<title>宮城野原駅</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601192101.html</link>
+<description><![CDATA[<img alt="rakutenstation_0078.jpg" src="http://www.ja1zlo.u-tokyo.org/blog/archives/rakutenstation_0078.jpg" width="426" height="640" />
+]]></description>
+<dc:subject>20050529JARL仙台総会</dc:subject>
+<dc:creator>ja1zlo</dc:creator>
+<dc:date>2005-06-01T19:21:01+09:00</dc:date>
+</item>
+<item rdf:about="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601182123.html">
+<title>JA7YAAアンテナ群</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601182123.html</link>
+<description><![CDATA[<img alt="050529_0068.jpg" src="http://www.ja1zlo.u-tokyo.org/blog/archives/050529_0068.jpg" width="426" height="640" />
+]]></description>
+<dc:subject>20050529JARL仙台総会</dc:subject>
+<dc:creator>ja1zlo</dc:creator>
+<dc:date>2005-06-01T18:21:23+09:00</dc:date>
+</item>
+<item rdf:about="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601172239.html">
+<title>2005年ALLJAコンテスト集合写真</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601172239.html</link>
+<description><![CDATA[<img alt="050429_0272.jpg" src="http://www.ja1zlo.u-tokyo.org/blog/archives/050429_0272.jpg" width="640" height="426" />
+]]></description>
+<dc:subject>20050429ALLJA</dc:subject>
+<dc:creator>ja1zlo</dc:creator>
+<dc:date>2005-06-01T17:22:39+09:00</dc:date>
+</item>
+<item rdf:about="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154555.html">
+<title>定例部会</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154555.html</link>
+<description><![CDATA[　部会＠駒場学生会館3F 310Ａ<br>
+　　毎週月、水 18:00-]]></description>
+<dc:subject>00300ivent</dc:subject>
+<dc:creator>ja1zlo</dc:creator>
+<dc:date>2005-06-01T15:45:55+09:00</dc:date>
+</item>
+<item rdf:about="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154511.html">
+<title>2005ALLJA1コンテスト開催</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154511.html</link>
+<description><![CDATA[　6/5(日) ALL JA1コンテスト終了！<br>
+　　　ハイバンド: 09:00-12:00<br>
+　　　ローバンド: 16:00-20:00]]></description>
+<dc:subject>00200ham</dc:subject>
+<dc:creator>ja1zlo</dc:creator>
+<dc:date>2005-06-01T15:45:11+09:00</dc:date>
+</item>
+<item rdf:about="http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154336.html">
+<title>QSL再発行のお知らせ</title>
+<link>http://www.ja1zlo.u-tokyo.org/blog/archives/2005/0601154336.html</link>
+<description><![CDATA[ＰＣトラブルで、2004 フィールドデーコンテスト(JA1YWX/1)のＱＴＨ（郡名）とＱＳＬカードの交信時刻が間違っていたため再発行致しました。大変ご迷惑をお掛けいたしました。<br>
+<br>
+なお、2004年度までのＱＳＬカードはZLO/YWX共に発送済みです。]]></description>
+<dc:subject>00100announce</dc:subject>
+<dc:creator>ja1zlo</dc:creator>
+<dc:date>2005-06-01T15:43:36+09:00</dc:date>
+</item>
+
+
+</rdf:RDF>

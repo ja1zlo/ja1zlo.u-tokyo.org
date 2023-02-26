@@ -1,0 +1,151 @@
+<html><!-- #BeginTemplate "/Templates/一般ページ_日本語.dwt" -->
+<head>
+<!-- #BeginEditable "doctitle" --> 
+<title>JA1ZLO Web</title>
+<!-- #EndEditable -->
+<meta http-equiv="Content-Type" content="text/html; charset=Shift_JIS">
+<link rel="stylesheet" href="../mystyle.css" type="text/css">
+</head>
+
+<body bgcolor="#ffffff" vlink="#333399" text="#000000" alink="#000000" link="#0063FF">
+<div align="left">
+  <table width="700" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td valign="top" width="350" rowspan="2"><img src="../image/toplogo.gif" width="350" height="50" alt="東大無線部"></td>
+      <td height="15" width="200" valign="top" bgcolor="#000000"><img src="../image/head_language.gif" width="200" height="15"></td>
+      <td valign="top" width="150" bgcolor="#000000"> 
+        <div align="left"><a href="../index-e.html"><img src="../image/head_english.gif" width="149" height="14" border="0" alt="English"></a></div>
+      </td>
+    </tr>
+    <tr> 
+      <td height="35" valign="middle" nowrap align="right" colspan="2"> 
+        <div align="right"><font size="1"> 〒153-8902 東京都目黒区駒場3-8-1 東京大学学生会館310A<br>
+          〒113-8654 東京都文京区本郷7-3-1 生協第二食堂3階2号室</font></div>
+      </td>
+    </tr>
+    <tr> 
+      <td height="17" colspan="3" valign="top"><img src="../image/head.gif" width="700" height="17" alt="The University of Tokyo A.R.C"></td>
+    </tr>
+    <tr> 
+      <td height="33" colspan="3" valign="top">　</td>
+    </tr>
+  </table>
+  <!-- #BeginEditable "%96%7B%95%B6" --> 
+  <table width="700" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td width="700" height="350">
+        <p><font size="+2">電子ログの作り方</font><br>
+          <font size="-2" color="#0066ff">電子ログがおわかりの方は読み飛ばしてください。</font><font size="-1"><br>
+          </font><font size="-2" color="#0066ff">分からない方はお問い合わせください。</font><br>
+          <br>
+          <font size="+1">１．ＰＣでロギング（ログを入力）</font><br>
+          ○win版のzLogwでロギングした場合<br>
+          　***.zlo、例えば、allja1.zloというファイルが生成される。<br>
+          　（ここでは特にはやることはありません。）<br>
+          <br>
+          ○Dos版のzLogcgでロギングした場合<br>
+          　***.bin、例えばzLogcgでロギングし、allja1.binという名前のファイルが生成される。<br>
+          　convcg.exe -gallja1として立ち上げ、allja1.txtというテキストのログファイル<br>
+          　に変換する。<br>
+          ○手書き紙ログの場合。<br>
+          　zLogやzLogwのポストコンテストモードで紙からパソコンに打ち直す。<br>
+          　後は上のとおりで、***.zlo（win版）か、***.txt（DOS版）を生成します。<br>
+          <br>
+          <font size="+1">２．***.zloか***.txtから電子ログを生成する。</font><br>
+          ○ZPRINTWを使用する<br>
+          　win版のZPRINTWを起動し、参加部門など必要事項を記入する。<br>
+          　　・zLogwから生成された***.zloを開いた場合は、上部のファイル(F)に<br>
+          　　　電子ログデータの表示（E）があるのでクリックすると、電子ログデータ<br>
+          　　　が表示される。<br>
+          　　・zLogから生成された***.txtを開いた場合は、電子ログデータの表示（E）<br>
+          　　　が表示されないことがある。その場合は 上書き保存（S）をクリックし保存<br>
+          　　　すると、***.txtと同じフォルダーに***.emというファイルができるので、<br>
+          　　　それをメモ帳などで開く。電子ログデータが表示される。<br>
+          <br>
+          〇ZPRINTWを使用しない。<br>
+          　<a href="http://www.jarl.or.jp/Japanese/1_Tanoshimo/1-1_Contest/e-log.htm" target="_top">JARLのページをご参照ください。</a><br>
+          <br>
+          <font size="+1">３．メールで提出する。<br>
+          </font>　２．で開いた電子ログデータを、編集（E）-全て選択（A）をクリックして<br>
+          　全て選択し、右クリックでコピーする。<br>
+          <br>
+          　お使いのメーラー（Outlookなど）を立ち上げる。<br>
+          <br>
+          　メールを新規作成する。タイトルを自分のコールサインと部門(High,Low）、<br>
+          　宛先を<a href="mailto:allja1@ja1zlo.u-tokyo.org">allja1@ja1zlo.u-tokyo.org</a>として、本文に先ほどコピーした<br>
+          　電子ログデータを右クリックで貼り付けする。<br>
+          <br>
+          　本文を見直してみて、ログなどに誤りがあったら訂正して送信する。<br>
+        </p>
+        <hr>
+        <pre>例）<br>
+Title: JI0VWL/0 (High)　　　　　←※Highバンド部門の場合<br>To: <a href="mailto:allja1@ja1zlo.u-tokyo.org">allja1@ja1zlo.u-tokyo.org</a><br><br>
+</pre>
+        <pre>&lt;SUMMARYSHEET VERSION=R1.0&gt;
+&lt;CONTESTNAME&gt;ALL JA1コンテスト&lt;/CONTESTNAME&gt;
+&lt;CATEGORYCODE&gt;　　&lt;/CATEGORYCODE&gt; 　　　←※なくてよい
+&lt;CATEGORYNAME&gt;管外シングルオペ、ハイバンド、マルチ電信&lt;/CATEGORYNAME&gt;
+&lt;CALLSIGN&gt;JI0VWL/0&lt;/CALLSIGN&gt;
+&lt;SCORE BAND=14MHz&gt;5,5,4&lt;/SCORE&gt;
+&lt;SCORE BAND=21MHz&gt;2,2,2&lt;/SCORE&gt;
+&lt;SCORE BAND=28MHz&gt;1,1,1&lt;/SCORE&gt;
+&lt;SCORE BAND=50MHz&gt;8,8,6&lt;/SCORE&gt;
+&lt;SCORE BAND=TOTAL&gt;16,16,13&lt;/SCORE&gt;
+&lt;TOTALSCORE&gt;208&lt;/TOTALSCORE&gt;
+&lt;ADDRESS&gt;〒000-0000 東京都〇〇市〇〇 0-0-0&lt;/ADDRESS&gt;
+&lt;TEL&gt;01-2345-6789&lt;/TEL&gt;
+&lt;NAME&gt;〇〇 〇〇&lt;/NAME&gt;
+&lt;EMAIL&gt;ji0vwl@jarl.com&lt;/EMAIL&gt;
+&lt;LICENSECLASS&gt;第1級アマチュア無線技士&lt;/LICENSECLASS&gt;
+&lt;POWER&gt;50&lt;/POWER&gt;
+&lt;POWERTYPE&gt;定格出力&lt;/POWERTYPE&gt;
+&lt;OPPLACE&gt;長野県長野市&lt;/OPPLACE&gt;
+&lt;POWERSUPPLY&gt;発動発電機&lt;/POWERSUPPLY&gt;
+&lt;EQUIPMENT&gt;TT-300S,RR-50,14-28=3ele,50=4ele&lt;/EQUIPMENT&gt;
+&lt;COMMENTS&gt;次回もがんばりたいと思います。&lt;/COMMENTS&gt;
+&lt;OATH&gt;私は，JARL制定のコンテスト規約および電波法令にしたがい運用た結果，ここに提出するサマリーシートおよびログシートなどが事実と相違ないものであることを，私の名誉において誓います。&lt;/OATH&gt;<br>&lt;DATE&gt;2003年6月1日&lt;/DATE&gt;
+&lt;SIGNATURE&gt;〇〇 〇〇&lt;/SIGNATURE&gt;
+&lt;/SUMMARYSHEET&gt;
+&lt;LOGSHEET TYPE=ZLOG&gt;
+mon day time callsign sent   rcvd      multi  MHz mode pts memo
+6   1   0901 JA1YWX   59909  599100105 100105 14  CW   1 <br>6   1   0910 JA1ZLO   59909  599100110 100110 50  CW   1<br>・<br>・以下省略<br>・<br>&lt;/LOGSHEET&gt;</pre>
+        <hr>
+        <address>今泉 憲 / JI0VWL &lt;ji0vwl@jarl.com&gt;</address>
+</td>
+    </tr>
+  </table>
+  <!-- #EndEditable -->
+  <table width="700" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td width="700" height="37" valign="top">　</td>
+    </tr>
+    <tr> 
+      <td valign="top" height="13"> 
+        <div align="right"><a href="../index.html"><font size="-1">Home &gt;&gt;</font></a><font size="-1">　</font></div>
+      </td>
+    </tr>
+  </table>
+  <table width="700" border="0" cellpadding="0" cellspacing="0">
+    <tr> 
+      <td width="700" height="49" valign="top"> 
+        <hr width="600" size="1" noshade align="center">
+        <div align="center"><font size="1">このサイトは、東京大学アマチュア無線部が管理しています。<br>
+          このサイトに関するお問い合わせは、<a href="mailto:master@ja1zlo.u-tokyo.org">master@ja1zlo.u-tokyo.org</a>へどうぞ<br>
+          それぞれのページに関するお問い合わせは、それぞれのページに表示されている問い合わせ先へどうぞ。<br>
+          All Rights Reserved, Copyright (c) 2002-2004 The University of Tokyo Amateur 
+          Radio Club</font></div>
+      </td>
+    </tr>
+  </table>
+</div>
+<script Language="JavaScript">
+<!--
+document.write("<img src='http://ja1zlo.u-tokyo.org/cgi-bin/acc/acclog.cgi?");
+document.write("referrer="+document.referrer+"&");
+document.write("width="+screen.width+"&");
+document.write("height="+screen.height+"&");
+document.write("color="+screen.colorDepth+"'>");
+// -->
+</script> 
+</body>
+<!-- #EndTemplate --></html>
