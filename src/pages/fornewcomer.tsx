@@ -78,7 +78,7 @@ const ForNewcomer = () => (
     </section>
 
     <section className={styles.content}>
-      <h2>年間スケジュール</h2>
+      <h2 className="headline1">年間スケジュール</h2>
       <p>
         <small>
           例年のおおまかなスケジュールです。
@@ -96,8 +96,8 @@ const ForNewcomer = () => (
         </ul>
       </section>
 
-      <h3 className="headline2">4〜6月</h3>
       <section>
+        <h3 className="headline2">4〜6月</h3>
         <ul className={ styles.list_sche_wrap }>
           <li className={ styles.list_sche }>
             サークルオリエンテーション・新歓BBQ
