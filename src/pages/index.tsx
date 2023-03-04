@@ -1,8 +1,10 @@
+import Title from 'components/title';
 import Link from 'next/link';
 import style from './index.module.scss';
 
 const Index: React.FC = () => (
   <article id={style.article}>
+    <Title title="" />
     <div id={style.content}>
       <section id={style.main}>
         <nav>

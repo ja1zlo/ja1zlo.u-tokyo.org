@@ -1,8 +1,10 @@
+import Title from 'components/title';
 import { useState } from 'react';
 import styles from "./fornewcomer.module.scss";
 
 const ForNewcomer = () => (
   <article className={styles.article}>
+    <Title title="新入生の方へ" />
     <div>
       <img src="image/feelradio.gif" alt="電波を感じろ！" /><br /><br />
     </div>
