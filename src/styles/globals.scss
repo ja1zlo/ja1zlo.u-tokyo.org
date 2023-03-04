@@ -6,8 +6,7 @@ html, body {
   padding: 0;
   height: 100%;
   /* width: 100%; */
-  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
-  font-size: 14px;
+  font-size: 16px;
   line-height: 1.42857143;
   color: #333;
   background-color: #fff;
@@ -22,8 +21,8 @@ header {
   grid-template-areas:
     "logo address"
     "bar bar";
-  height: 100px;
   width: 700px;
+  margin-bottom: 20px;
 
   #toplogo {
     grid-area: logo;
