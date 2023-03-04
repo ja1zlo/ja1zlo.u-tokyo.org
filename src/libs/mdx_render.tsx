@@ -5,8 +5,9 @@ const MDXRender: React.FC<MDXRemoteProps> = (context) => (
   <MDXRemote
     {...context}
     components={{
-      table: (props) => (<table className="md-table" {...props} />),
+      table: (props) => <table className="md-table" {...props} />,
     }}
-  />);
+  />
+);
 
 export default MDXRender;

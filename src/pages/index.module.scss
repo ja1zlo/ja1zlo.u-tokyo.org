@@ -17,15 +17,19 @@
       }
       li {
         list-style: none;
-          &::before {
-            font-size: 0.9em;
-            margin-right: 3px;
-          }
+        &::before {
+          font-size: 0.9em;
+          margin-right: 3px;
+        }
       }
-      &>ul>li {
-        &::before { content: "■"; }
-        &>ul>li {
-          &::before { content: "□"; }
+      & > ul > li {
+        &::before {
+          content: "■";
+        }
+        & > ul > li {
+          &::before {
+            content: "□";
+          }
         }
       }
     }
@@ -47,7 +51,6 @@
       padding-right: 10px;
     }
   }
-
 }
 
 @media screen and (max-width: 600px) {
