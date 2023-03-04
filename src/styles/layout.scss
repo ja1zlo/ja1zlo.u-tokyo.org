@@ -5,9 +5,8 @@ html, body {
   margin: 0;
   padding: 0;
   height: 100%;
-  /* width: 100%; */
   font-size: 16px;
-  line-height: 1.42857143;
+  line-height: 1.8;
   color: #333;
   background-color: #fff;
 }
@@ -45,6 +44,8 @@ header {
 
 main > article {
   margin: 20px;
+  width: 600px;
+  margin: 0 auto;
 }
 
 footer {
