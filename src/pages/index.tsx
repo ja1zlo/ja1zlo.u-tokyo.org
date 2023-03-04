@@ -42,13 +42,11 @@ const Index: React.FC = () => (
         <section>
           <h2>広報</h2>
           <p>
-            <br />
             <b><a href="https://www.fbnews.jp/202212/musennosekai/">電子Webマガジン 「月刊FBニュース」 にて当クラブが紹介されました</a></b><br />
             <br />
             <b><a href="http://ja1zlo.u-tokyo.org/allja1/34rule.html">第34回ALLJA1コンテスト規約</a></b><br />
             <b><a href="https://allja1.org">ALLJA1の書類提出はこちら</a></b><br />
             <b><a href="http://ja1zlo.u-tokyo.org/rt/rt1.html">第１回リアルタイムコンテスト パブリックコメント募集中</a></b><br />
-            <br />
           </p>
         </section>
         <section>
