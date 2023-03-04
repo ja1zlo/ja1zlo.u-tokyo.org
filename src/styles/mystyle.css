@@ -5,27 +5,3 @@ a:link {  text-decoration: none; clip:   rect(   )}
 a:visited {  text-decoration: none}
 a:active {  text-decoration: none}
 
-/* 見出しスタイル設定 */
-
-.headline1 {
-    width: 500px;
-    color: #333333;
-    font-size: 30px;
-    font-weight: bold;
-    margin-left: 50px;
-    margin-bottom: 20px;
-    text-align: center;
-    border-bottom: 2px solid #444444;
-}
-
-.headline2 {
-    width:120px;
-    color: #444444;
-    background: #c6e4ff;
-    border-bottom: 3px solid #aac5de;
-    text-align: center;
-    border-radius: 5px;
-    margin: 3px;
-}
-
-

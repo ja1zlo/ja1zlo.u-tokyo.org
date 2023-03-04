@@ -8,8 +8,29 @@
 
 }
 
+.headline1 {
+    width: 500px;
+  max-width: 100%;
+    color: #333333;
+    font-size: 30px;
+    font-weight: bold;
+  margin: 0 auto;
+    margin-bottom: 20px;
+    text-align: center;
+    border-bottom: 2px solid #444444;
+}
+
+.headline2 {
+    width:120px;
+    color: #444444;
+    background: #c6e4ff;
+    border-bottom: 3px solid #aac5de;
+    text-align: center;
+    border-radius: 5px;
+    margin: 3px;
+}
+
 .shadowed_box {
-  width:90%;
   padding: 0.5em 1em;
   margin: 2em 0;
   color: #444444;
@@ -47,6 +68,16 @@
 
   .gallery_image {
     cursor: pointer;
+  }
+
+  @media screen and (max-width: 600px) {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    width: 100%;
+    .gallery_image {
+      width: 100%;
+    }
   }
 }
 

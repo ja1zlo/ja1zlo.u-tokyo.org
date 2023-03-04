@@ -60,8 +60,8 @@ const Index: React.FC = () => (
         </section>
       </section>
     </div>
-    <p style={ {textAlignLast: 'right'} }>
-    <small>Since 2004/3/22</small>
+    <p style={ {textAlignLast: 'right', paddingRight: '1em'} }>
+      <small>Since 2004/3/22</small>
     </p>
   </article>
 

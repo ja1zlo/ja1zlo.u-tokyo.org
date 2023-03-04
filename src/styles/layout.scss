@@ -4,52 +4,59 @@
 html, body {
   margin: 0;
   padding: 0;
-  height: 100%;
   font-size: 16px;
   line-height: 1.8;
   color: #333;
-  background-color: #fff;
+}
+
+html {
+  width: 100%;
+  background-color: #f8f8f8;
 }
 
 body {
-  width: 700px;
+  width: 100%;
+  max-width: 1000px;
+  margin: 0 auto;
 }
 
 header {
-  display: grid;
-  grid-template-areas:
-    "logo address"
-    "bar bar";
-  width: 700px;
-  margin-bottom: 20px;
+  display: flex;
+  width: 100%;
+  border-bottom: 1.2rem solid #006;
+  background-color: #fff;
+
+  position: sticky;
+  top: 0;
+
 
   #toplogo {
     grid-area: logo;
-  }
-
-  #header_address {
-    grid-area: address;
-    font-size: 10px;
-    text-align: right;
-    padding: 10px;
-    p {
-      margin: 0;
+    padding: 0;
+    height: 5em;
+    img {
+      height: 100%;
     }
   }
+}
+main {
+  padding: 20px 0;
+}
 
-  #header_bar {
-    grid-area: bar;
-  }
+#layout_wrapper {
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0,0,0,0.2);
+
 }
 
 main > article {
   margin: 20px;
-  width: 600px;
+  max-width: 800px;
+  width: calc(100% - 40px);
   margin: 0 auto;
 }
 
 footer {
-  border-top: 1px solid #ddd;
   margin-top: 20px;
   text-align: center;
   padding: 20px 0;

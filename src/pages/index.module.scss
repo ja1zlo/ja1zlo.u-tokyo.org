@@ -1,5 +1,6 @@
 #article {
   width: 100% !important;
+  max-width: none !important;
   margin: 0 !important;
 }
 #content {
@@ -7,7 +8,7 @@
   width: 100%;
 
   #main {
-    width: 400px;
+    flex-grow: 1;
     padding: 20px;
 
     nav {
@@ -31,7 +32,7 @@
   }
 
   #side {
-    width: 300px;
+    max-width: 400px;
     margin-left: 20px;
 
     border-left: 2px solid #ccc;
@@ -43,7 +44,27 @@
     }
     p {
       margin-left: 10px;
+      padding-right: 10px;
     }
   }
 
+}
+
+@media screen and (max-width: 600px) {
+  #content {
+    flex-direction: column;
+    #main {
+      margin-bottom: 20px;
+    }
+    #side {
+      width: 100%;
+      max-width: none;
+      margin-left: 0;
+      border-left: none;
+      h2 {
+        width: 100%;
+        max-width: none;
+      }
+    }
+  }
 }

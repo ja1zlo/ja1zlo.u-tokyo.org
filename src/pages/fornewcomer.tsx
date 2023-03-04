@@ -5,8 +5,8 @@ import styles from "./fornewcomer.module.scss";
 const ForNewcomer = () => (
   <article className={styles.article}>
     <Title title="新入生の方へ" />
-    <div>
-      <img src="image/feelradio.gif" alt="電波を感じろ！" /><br /><br />
+    <div style={{textAlign: 'center'}}>
+      <img src="image/feelradio.gif" alt="電波を感じろ！" style={{width: '90%'}} /><br /><br />
     </div>
 
     <section className={styles.shadowed_box}>
@@ -27,14 +27,14 @@ const ForNewcomer = () => (
     <section className={styles.content}>
       <div>
         <section>
-          <h2 className="headline1">アマチュア無線の紹介</h2>
+          <h2 className={styles.headline1}>アマチュア無線の紹介</h2>
           <small>
             一体何をするサークルなんだ？と思ったアナタ。まずは読んでみてください。
           </small>
         </section>
 
         <section>
-          <h3 className="headline2">無線</h3>
+          <h3 className={styles.headline2}>無線</h3>
           「アマチュア無線は、電波を用いて他の無線局と交信するのが主な目的です。」<br />
           <br />
           不特定多数の人と交信する楽しみは、今や携帯やインターネットでも体験できるのは事実。
@@ -48,7 +48,7 @@ const ForNewcomer = () => (
         </section>
 
         <section>
-          <h3 className="headline2">コンテスト</h3>
+          <h3 className={styles.headline2}>コンテスト</h3>
           しかし、交信が楽しいといってもさすがにそればかりだと飽きてきてしまうもの。
           しかしアマチュア無線には様々な楽しみ方があり、そのひとつにコンテストがあります。
           コンテストとはすなわちアマチュア無線の競技会です。一定時間電波を出しつづけ、どれだけ多くの無線局と交信できるかを競うもの。
@@ -60,7 +60,7 @@ const ForNewcomer = () => (
         </section>
 
         <section>
-          <h3 className="headline2">免許と設備</h3>
+          <h3 className={styles.headline2}>免許と設備</h3>
           いちおうお約束なので無線局の紹介。分からない人は読み飛ばしてください。
           無線局の免許はふたつ。JA1ZLO（駒場），JA1YWX（本郷）です。<br />
           私たちのサークルは1.9MHz から28MHz までなら、アマチュア無線に許可されている最大出力1kW で運用することが出来ます(2002年4月に免許)。
@@ -68,7 +68,7 @@ const ForNewcomer = () => (
         </section>
 
         <section>
-          <h3 className="headline2" >人</h3>
+          <h3 className={styles.headline2} >人</h3>
           と、ここまで読んでいくと、アマチュア無線クラブは「理系だけの、それもばりばりの電気屋さんや機械屋さんしかいないサークルなの？」
           ってことになりますが、実際はそんなことはありません。確かにほとんどの構成員は理系の学部に所属していますが、中には文科系の人もいます。
           趣味や特技も無線だけにとどまらず、哲学屋さんもいるし、車いじりが好きだったり、デザインが趣味だったり、
@@ -78,7 +78,7 @@ const ForNewcomer = () => (
     </section>
 
     <section className={styles.content}>
-      <h2 className="headline1">年間スケジュール</h2>
+      <h2 className={styles.headline1}>年間スケジュール</h2>
       <p>
         <small>
           例年のおおまかなスケジュールです。
@@ -87,7 +87,7 @@ const ForNewcomer = () => (
       </p>
 
       <section>
-        <h3 className="headline2"><b>通年</b></h3>
+        <h3 className={styles.headline2}><b>通年</b></h3>
         <ul className={ styles.list_sche_wrap }>
           <li className={ styles.list_sche }>
             部会<br />
@@ -97,7 +97,7 @@ const ForNewcomer = () => (
       </section>
 
       <section>
-        <h3 className="headline2">4〜6月</h3>
+        <h3 className={styles.headline2}>4〜6月</h3>
         <ul className={ styles.list_sche_wrap }>
           <li className={ styles.list_sche }>
             サークルオリエンテーション・新歓BBQ
@@ -118,7 +118,7 @@ const ForNewcomer = () => (
       </section>
 
       <section>
-        <h3 className="headline2">7〜9月</h3>
+        <h3 className={styles.headline2}>7〜9月</h3>
         <ul className={ styles.list_sche_wrap }>
           <li className={ styles.list_sche }>
             6m AND DOWNコンテスト<br />
@@ -136,7 +136,7 @@ const ForNewcomer = () => (
       </section>
 
       <section>
-        <h3 className="headline2">10〜12月</h3>
+        <h3 className={styles.headline2}>10〜12月</h3>
         <ul className={ styles.list_sche_wrap }>
           <li className={ styles.list_sche }>
             全市全郡コンテスト<br />
@@ -154,7 +154,7 @@ const ForNewcomer = () => (
       </section>
 
       <section>
-        <h3 className="headline2">1〜3月</h3>
+        <h3 className={styles.headline2}>1〜3月</h3>
         <ul className={ styles.list_sche_wrap }>
           <li className={ styles.list_sche }>
             移動運用（登山など）<br />
@@ -170,7 +170,7 @@ const ForNewcomer = () => (
 
     <section id="gallery_content">
 
-      <h2 className="headline1">ギャラリー（活動風景）</h2>
+      <h2 className={styles.headline1}>ギャラリー（活動風景）</h2>
       <p><small> クリックで拡大します（説明文付き）。</small></p>
       <div className={styles.gallery}>
 
@@ -232,7 +232,7 @@ const ImagePopup: React.FC<ImagePopupProps> = (props) => {
       </div>
       <div className={styles.popup} style={{display: (opened ? "block" : "none")}} aria-hidden="true">
         <div className={ styles.popup_content }>
-          <img src={props.src} alt={props.alt} className={ styles.layer_img } style={{height: "90%" }} /><br />
+          <img src={props.src} alt={props.alt} className={ styles.layer_img } /><br />
           ▲{props.comment}<br />
         </div>
         <button type="button" className={ styles.btn_close } onClick={()=>setOpen(false)}>閉じる</button>
