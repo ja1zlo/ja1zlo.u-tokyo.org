@@ -1,61 +1,8 @@
-* {
-  box-sizing: border-box;
-}
-html, body {
-  margin: 0;
-  padding: 0;
-  height: 100%;
-  /* width: 100%; */
-  font-size: 16px;
-  line-height: 1.42857143;
-  color: #333;
-  background-color: #fff;
-}
+@import "./layout.scss";
 
-body {
-  width: 700px;
-}
-
-header {
-  display: grid;
-  grid-template-areas:
-    "logo address"
-    "bar bar";
-  width: 700px;
-  margin-bottom: 20px;
-
-  #toplogo {
-    grid-area: logo;
-  }
-
-  #header_address {
-    grid-area: address;
-    font-size: 10px;
-    text-align: right;
-    padding: 10px;
-    p {
-      margin: 0;
-    }
-  }
-
-  #header_bar {
-    grid-area: bar;
+a {
+  color: #0063ff;
+  &:visited {
+    color: #333399;
   }
 }
-
-main > article {
-  margin: 20px;
-}
-
-footer {
-  border-top: 1px solid #ddd;
-  margin-top: 20px;
-  text-align: center;
-  padding: 20px 0;
-  font-size: 10px;
-
-  p {
-    margin: 0;
-  }
-}
-
