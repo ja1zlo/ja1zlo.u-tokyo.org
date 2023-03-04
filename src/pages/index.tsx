@@ -10,7 +10,7 @@ const Index: React.FC = () => (
         <nav>
           <ul>
             <li><Link href="/fornewcomer">新入生の方へ</Link></li>
-            <li><a href="equipment.html">設備概要</a> / <a href="member.html">メンバー</a></li>
+            <li><Link href="/equipment">設備概要</Link> / <Link href="/member">メンバー</Link></li>
             <li>
               コンテスト
               <ul>
