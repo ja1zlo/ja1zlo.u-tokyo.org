@@ -24,13 +24,14 @@ const Index: React.FC = () => (
             </li>
             <li><a href="history.html">活動記録</a></li>
             <li><a href="socho.html">総長賞受賞</a></li>
+            <li>
+              Twitter
+              <ul>
+                <li><a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>　</li>
+                <li><a href="https://twitter.com/nextzlog">@nextzlog</a>　</li>
+              </ul>
+            </li>
             <li><a href="link.html">リンク</a>　</li>
-          </ul>
-
-          <p>Twitter</p>
-          <ul>
-            <li><a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>　</li>
-            <li><a href="https://twitter.com/nextzlog">@nextzlog</a>　</li>
           </ul>
         </nav>
       </section>
