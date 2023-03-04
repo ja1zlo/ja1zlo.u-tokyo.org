@@ -3,7 +3,6 @@ import Head from 'next/head';
 import Link from 'next/link'
 
 import 'styles/globals.scss'
-import 'styles/mystyle.css'
 
 export default function App({ Component, pageProps }: AppProps) {
   return (<>

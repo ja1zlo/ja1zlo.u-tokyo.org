@@ -5,6 +5,11 @@ a {
   &:visited {
     color: #333399;
   }
+  &:hover {
+    color: #ff0000;
+  }
+
+  text-decoration: none;
 }
 
 main {

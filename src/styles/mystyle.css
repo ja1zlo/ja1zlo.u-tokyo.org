@@ -1,7 +1,0 @@
-/* from /mystyle.css */
-
-a:hover {  position: relative; clip:        rect(   ); text-decoration: none; visibility: visible; color: #FF0000; z-index: +1; left: 1px; top: 1px}
-a:link {  text-decoration: none; clip:   rect(   )}
-a:visited {  text-decoration: none}
-a:active {  text-decoration: none}
-
