@@ -1,0 +1,74 @@
+.content {
+  section {
+    margin-bottom: 20px;
+  }
+  h2, h3 {
+    margin-bottom: 20px;
+  }
+
+}
+
+.shadowed_box {
+  width:90%;
+  padding: 0.5em 1em;
+  margin: 2em 0;
+  color: #444444;
+  background: #c6e4ff;
+  border-bottom: solid 6px #aac5de;
+  border-radius: 9px;
+}
+
+/* スケジュール箇条書き設定 */
+
+.list_sche_wrap {
+    list-style:  none;
+    margin:  0;
+    padding: 0;
+}
+
+.list_sche:before {
+    content:  "";
+    width:  10px;
+    height:  10px;
+    display:  inline-block;
+    background-color: #4682b4;
+    border-radius:  50%;
+}
+
+
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-gap: 10px;
+  margin: 0 auto;
+  width: 600px;
+  margin-bottom: 20px;
+
+  .gallery_image {
+    cursor: pointer;
+  }
+}
+
+/* ポップアップウインドウの設定 */
+.popup {
+  background-color: rgba(0, 0, 0, .8);
+  box-shadow: 0 0 0 9999px rgba(0, 0, 0, .8);
+  color: #FFF;
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  margin: auto;
+  width: 80%;
+  overflow-y: auto;
+}
+
+/* ポップアップの内容 */
+.popup_content{
+  margin: 40px auto 40px auto;
+  height: 80%;
+}

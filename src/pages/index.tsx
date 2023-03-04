@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import style from './index.module.scss';
 
 const Index: React.FC = () => (
@@ -6,7 +7,7 @@ const Index: React.FC = () => (
       <section id={style.main}>
         <nav>
           <ul>
-            <li><a href="fornewcomer.html">新入生の方へ</a></li>
+            <li><Link href="/fornewcomer">新入生の方へ</Link></li>
             <li><a href="equipment.html">設備概要</a> / <a href="member.html">メンバー</a></li>
             <li>
               コンテスト
