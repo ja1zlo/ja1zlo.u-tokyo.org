@@ -1,7 +1,0 @@
-AddHandler cgi-script htaccess
-Options -Indexes
-Options +ExecCGI
-AddType text/html cgi
-AddHandler cgi-script cgi
-ErrorDocument 404 /~ja1zlo/404.html
-
