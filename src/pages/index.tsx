@@ -20,7 +20,7 @@ const Index: React.FC = () => (
               コンテスト
               <ul>
                 <li>
-                  <a href="allja1/index.html">ALL JA1</a>
+                  <Link href="/allja1/index.html">ALL JA1</Link>
                 </li>
               </ul>
             </li>
@@ -28,40 +28,39 @@ const Index: React.FC = () => (
               ソフトウェア
               <ul>
                 <li>
-                  <a href="http://www.zlog.org/">ZLOG</a>
+                  <Link href="http://www.zlog.org/">ZLOG</Link>
                 </li>
                 <li>
-                  <a href="CWerproject.html">CWer&apos;s project</a>
+                  <Link href="/CWerproject.html">CWer&apos;s project</Link>
                 </li>
                 <li>
-                  <a href="https://nextzlog.dev">無線部開発班</a>
+                  <Link href="https://nextzlog.dev">無線部開発班</Link>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="history.html">活動記録</a>
+              <Link href="/history.html">活動記録</Link>
             </li>
             <li>
-              <a href="socho.html">総長賞受賞</a>
+              <Link href="/socho.html">総長賞受賞</Link>
             </li>
             <li>
               Twitter
               <ul>
                 <li>
-                  <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>　
+                  <Link href="https://twitter.com/JA1ZLO">@JA1ZLO</Link>　
                 </li>
                 <li>
-                  <a href="https://twitter.com/nextzlog">@nextzlog</a>　
+                  <Link href="https://twitter.com/nextzlog">@nextzlog</Link>　
                 </li>
               </ul>
             </li>
             <li>
-              <a href="link.html">リンク</a>　
+              <Link href="/link.html">リンク</Link>　
             </li>
           </ul>
         </nav>
       </section>
-      {/* <a href="equipment.html"><img src="photo/topmenu_background.jpg" width="200" height="350"  alt="学生会館リニューアル" /></a> */}
 
       <section id={style.side}>
         <section>
@@ -75,9 +74,7 @@ const Index: React.FC = () => (
             <br />
             <br />
             <b>
-              <a href="http://ja1zlo.u-tokyo.org/allja1/34rule.html">
-                第34回ALLJA1コンテスト規約
-              </a>
+              <Link href="/allja1/34rule.html">第34回ALLJA1コンテスト規約</Link>
             </b>
             <br />
             <b>
@@ -85,9 +82,9 @@ const Index: React.FC = () => (
             </b>
             <br />
             <b>
-              <a href="http://ja1zlo.u-tokyo.org/rt/rt1.html">
+              <Link href="/rt/rt1.html">
                 第１回リアルタイムコンテスト パブリックコメント募集中
-              </a>
+              </Link>
             </b>
             <br />
           </p>

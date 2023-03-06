@@ -7,7 +7,7 @@ const ForNewcomer = () => (
     <Title title="新入生の方へ" />
     <div style={{ textAlign: "center" }}>
       <img
-        src="image/feelradio.gif"
+        src="/image/feelradio.gif"
         alt="電波を感じろ！"
         style={{ width: "90%" }}
       />
@@ -236,37 +236,37 @@ const ForNewcomer = () => (
       </p>
       <div className={styles.gallery}>
         <ImagePopup
-          src="image/gallery_antenna1.jpg"
+          src="/image/gallery_antenna1.jpg"
           alt=""
           comment="駒場キャンパス内の学生会館。屋上に建っているアンテナは東大無線部所有のものです。"
         />
 
         <ImagePopup
-          src="image/gallery_antenna2.jpg"
+          src="/image/gallery_antenna2.jpg"
           alt=""
           comment="学生会館屋上のアンテナ拡大。部室からローテータを用いて回転させることができます。"
         />
 
         <ImagePopup
-          src="image/gallery_contest1.jpg"
+          src="/image/gallery_contest1.jpg"
           alt=""
           comment="コンテスト中の交信風景。テキパキさばくにはテクニックが必要ですが、すぐに慣れます。"
         />
 
         <ImagePopup
-          src="image/gallery_transceiver1.jpg"
+          src="/image/gallery_transceiver1.jpg"
           alt=""
           comment="東大無線部所有の無線機（IC-9700）。これとアンテナを同軸ケーブルで繋いで交信します。"
         />
 
         <ImagePopup
-          src="image/gallery_field1.jpg"
+          src="/image/gallery_field1.jpg"
           alt=""
           comment="8月に行われるフィールドデーコンテストの一風景。野外にアンテナを設置して交信します。"
         />
 
         <ImagePopup
-          src="image/gallery_field2.jpg"
+          src="/image/gallery_field2.jpg"
           alt=""
           comment="8月に行われるフィールドデーコンテストの一風景。腹が減っては戦は出来ぬ、ですね。"
         />

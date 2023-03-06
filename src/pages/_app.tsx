@@ -14,7 +14,7 @@ export default function App({ Component, pageProps }: AppProps) {
         <header>
           <Link id="toplogo" href="/">
             <img
-              src="image/toplogo.gif"
+              src="/image/toplogo.gif"
               width="350"
               height="50"
               alt="東大無線部"
