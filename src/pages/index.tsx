@@ -74,7 +74,7 @@ const Index: React.FC = () => (
             <br />
             <br />
             <b>
-              <Link href="/allja1/34rule.html">第34回ALLJA1コンテスト規約</Link>
+              <Link href="/allja1/35rule.html">第35回ALLJA1コンテスト規約</Link>
             </b>
             <br />
             <b>
