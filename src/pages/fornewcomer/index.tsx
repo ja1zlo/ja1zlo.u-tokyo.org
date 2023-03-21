@@ -1,6 +1,6 @@
 import Title from "components/title";
 import { useState } from "react";
-import styles from "./fornewcomer.module.scss";
+import styles from "./index.module.scss";
 
 const ForNewcomer = () => (
   <article className={styles.article}>
