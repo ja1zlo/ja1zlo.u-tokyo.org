@@ -1,0 +1,29 @@
+@font-face {
+  font-family: "Morse Font";
+  src: url("/assets/morse_font.woff2");
+}
+
+.sign_sidebyside {
+  display: flex;
+  gap: 1rem;
+  padding: 1rem 0;
+
+  white-space: nowrap;
+  overflow-x: auto;
+  line-height: 2em;
+
+  div {
+    padding: 5rem 1rem;
+  }
+
+  .morse_text {
+    font-family: "Morse Font";
+    border: 1px solid black;
+    font-size: 1em;
+    box-shadow: 2px 2px 2px 1px black;
+  }
+  .alpha_text {
+    font-family: monospace;
+    font-weight: bold;
+  }
+}
