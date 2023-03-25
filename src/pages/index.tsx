@@ -42,7 +42,7 @@ const Index: React.FC = () => (
               <Link href="/history.html">活動記録</Link>
             </li>
             <li>
-              <Link href="/socho.html">総長賞受賞</Link>
+              <Link href="/socho">総長賞受賞</Link>
             </li>
             <li>
               Twitter
