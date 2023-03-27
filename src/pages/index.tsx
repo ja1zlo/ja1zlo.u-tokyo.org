@@ -7,6 +7,7 @@ const Index: React.FC = () => (
     <Title title="" />
     <div id={style.content}>
       <section id={style.main}>
+        <h1>東大無線部 JA1ZLO Web</h1>
         <nav>
           <ul>
             <li>
