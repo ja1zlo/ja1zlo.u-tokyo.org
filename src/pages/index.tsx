@@ -20,7 +20,7 @@ const Index: React.FC = () => (
               コンテスト
               <ul>
                 <li>
-                  <Link href="/allja1/index.html">ALL JA1</Link>
+                  <a href="/allja1/index.html">ALL JA1</a>
                 </li>
               </ul>
             </li>
@@ -28,18 +28,18 @@ const Index: React.FC = () => (
               ソフトウェア
               <ul>
                 <li>
-                  <Link href="http://www.zlog.org/">ZLOG</Link>
+                  <a href="http://www.zlog.org/">ZLOG</a>
                 </li>
                 <li>
-                  <Link href="/CWerproject.html">CWer&apos;s project</Link>
+                  <a href="/CWerproject.html">CWer&apos;s project</a>
                 </li>
                 <li>
-                  <Link href="https://nextzlog.dev">無線部開発班</Link>
+                  <a href="https://nextzlog.dev">無線部開発班</a>
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/history.html">活動記録</Link>
+              <a href="/history.html">活動記録</a>
             </li>
             <li>
               <Link href="/socho">総長賞受賞</Link>
@@ -48,15 +48,15 @@ const Index: React.FC = () => (
               Twitter
               <ul>
                 <li>
-                  <Link href="https://twitter.com/JA1ZLO">@JA1ZLO</Link>　
+                  <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>　
                 </li>
                 <li>
-                  <Link href="https://twitter.com/nextzlog">@nextzlog</Link>　
+                  <a href="https://twitter.com/nextzlog">@nextzlog</a>　
                 </li>
               </ul>
             </li>
             <li>
-              <Link href="/link.html">リンク</Link>　
+              <a href="/link.html">リンク</a>　
             </li>
           </ul>
         </nav>
@@ -74,7 +74,7 @@ const Index: React.FC = () => (
             <br />
             <br />
             <b>
-              <Link href="/allja1/35rule.html">第35回ALLJA1コンテスト規約</Link>
+              <a href="/allja1/35rule.html">第35回ALLJA1コンテスト規約</a>
             </b>
             <br />
             <b>
@@ -82,9 +82,9 @@ const Index: React.FC = () => (
             </b>
             <br />
             <b>
-              <Link href="/rt/rt1.html">
+              <a href="/rt/rt1.html">
                 第１回リアルタイムコンテスト パブリックコメント募集中
-              </Link>
+              </a>
             </b>
             <br />
           </p>
