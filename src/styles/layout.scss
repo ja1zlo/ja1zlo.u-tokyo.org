@@ -29,6 +29,9 @@ header {
   background-color: #fff;
 
   position: sticky;
+  @media (max-width: 1000px) {
+    position: static;
+  }
   top: 0;
 
   #toplogo {
