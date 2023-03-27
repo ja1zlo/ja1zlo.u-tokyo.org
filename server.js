@@ -3,7 +3,7 @@ const http = require("http");
 const fs = require("fs");
 const path = require("path");
 
-exec("yarn next dev", (err, stdout, stderr) => {
+exec("yarn next dev -p 3001", (err, stdout, stderr) => {
   if (err) {
     //some err occurred
     console.error(err);
@@ -51,7 +51,7 @@ const server = http.createServer(async (req, res) => {
 
         const options = {
           hostname: "localhost",
-          port: 3000,
+          port: 3001,
           path: req.url,
           method: req.method,
           headers: req.headers,
@@ -75,5 +75,5 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-console.log("Server running at http://localhost:3001/");
-server.listen(3001);
+console.log("Server running at http://localhost:3000/");
+server.listen(3000);
