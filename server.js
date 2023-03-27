@@ -40,7 +40,7 @@ const server = http.createServer(async (req, res) => {
     })
       .then((data) => {
         res.statusCode = 200;
-        res.setHeader("Content-Type", contentType);
+        res.setHeader("Content-Type", `${contentType}; charset=utf-8`);
         res.end(data);
       })
       .catch(async (e) => {
