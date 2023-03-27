@@ -2,28 +2,54 @@
   font-family: "Morse Font";
   src: url("/assets/morse_font.woff2");
 }
-
-.sign_sidebyside {
+.sign_wrapper {
   display: flex;
-  gap: 1rem;
+  justify-content: center;
   padding: 1rem 0;
 
-  white-space: nowrap;
   overflow-x: auto;
-  line-height: 2em;
+  line-height: 2.5em;
 
-  div {
-    padding: 5rem 1rem;
-  }
-
-  .morse_text {
-    font-family: "Morse Font";
+  div.morse_sign {
     border: 1px solid black;
     font-size: 1em;
     box-shadow: 2px 2px 2px 1px black;
+    white-space: nowrap;
+    padding: 1rem;
+    font-family: "Morse Font";
+    p {
+      margin: 2em 0;
+    }
+    ruby {
+      rt {
+        font-family: monospace;
+        font-size: 1em;
+        font-weight: bold;
+      }
+    }
   }
-  .alpha_text {
-    font-family: monospace;
-    font-weight: bold;
+}
+
+.keyer_images {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  img {
+    height: auto;
+  }
+}
+@media (min-width: 768px) {
+  .keyer_images {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+    img {
+      width: calc(50% - 1rem);
+      height: auto;
+      min-width: 200px;
+    }
   }
 }
