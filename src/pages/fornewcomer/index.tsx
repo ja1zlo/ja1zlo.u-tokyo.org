@@ -1,6 +1,9 @@
 import Title from "components/title";
 import { useState } from "react";
 import styles from "./index.module.scss";
+import Image from "next/image";
+
+import CalendarImg from "./calendar.png";
 
 const ForNewcomer = () => (
   <article className={styles.article}>
@@ -17,7 +20,7 @@ const ForNewcomer = () => (
 
     <section className={styles.shadowed_box}>
       <h3>☆入部をご希望の方へ☆</h3>
-      新歓情報・初回部会についての連絡のため、
+      新歓情報についての連絡のため、
       <br />
       <a
         href="https://forms.gle/UGgrHVMPQYwStK5d6"
@@ -29,6 +32,10 @@ const ForNewcomer = () => (
       のフォームより連絡先の登録にご協力お願いします。
       <br />
     </section>
+
+    <div>
+      <Image src={CalendarImg} alt="新歓日程" />
+    </div>
 
     <p>
       <a
