@@ -68,6 +68,13 @@ const Index: React.FC = () => (
           <h2>広報</h2>
           <p>
             <b>
+              <a href="https://jarl-tokyo.org/wp2/top-page/comm00-2/comm00/informations/">
+                JARL東京都支部主催「無線サイエンスセミナー」が6/11に東京大学で開催されます
+              </a>
+            </b>
+            <br />
+            <br />
+            <b>
               <a href="https://www.fbnews.jp/202212/musennosekai/">
                 電子Webマガジン 「月刊FBニュース」 にて当クラブが紹介されました
               </a>
