@@ -68,19 +68,24 @@ const Index: React.FC = () => (
           <h2>広報</h2>
           <p>
             <b>
+              <a href="/komafes74/">駒場祭展示 わかる! 無線通信 企画サイト</a>
+            </b>
+          </p>
+          <p>
+            <b>
               <a href="https://jarl-tokyo.org/wp2/top-page/comm00-2/comm00/informations/">
                 JARL東京都支部主催「無線サイエンスセミナー」が6/11に東京大学で開催されます
               </a>
             </b>
-            <br />
-            <br />
+          </p>
+          <p>
             <b>
               <a href="https://www.fbnews.jp/202212/musennosekai/">
                 電子Webマガジン 「月刊FBニュース」 にて当クラブが紹介されました
               </a>
             </b>
-            <br />
-            <br />
+          </p>
+          <p>
             <b>
               <a href="/allja1/35rule.html">第35回ALLJA1コンテスト規約</a>
             </b>
