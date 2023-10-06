@@ -39,6 +39,9 @@
     "prettier": "^2.8.4",
     "prettier-plugin-md-nocjsp": "^1.5.1"
   },
+  "resolutions": {
+    "@types/react": "^18.0.28"
+  },
   "husky": {
     "hooks": {
       "pre-commit": "lint-staged"

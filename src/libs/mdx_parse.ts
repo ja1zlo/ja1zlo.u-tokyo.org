@@ -27,7 +27,11 @@ async function parseMDX(file: string) {
   });
 
   const fallbackTitle = (content.match(/^# (.+)$/m) ?? [null, null])[1];
-  const title = (source.frontmatter?.title ?? fallbackTitle ?? "").trim();
+  const title = (
+    (source.frontmatter?.title as string) ??
+    fallbackTitle ??
+    ""
+  ).trim();
 
   return {
     title,
