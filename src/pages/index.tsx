@@ -26,13 +26,15 @@ const Index: React.FC = () => (
               </ul>
             </li>
             <li>
-              ソフトウェア
+              ハードウェア・ソフトウェア
               <ul>
                 <li>
                   <a href="http://www.zlog.org/">ZLOG</a>
                 </li>
                 <li>
-                  <a href="/CWerproject.html">CWer&apos;s project</a>
+                  <a href="/hard_softwares">
+                    その他のハードウェア・ソフトウェア
+                  </a>
                 </li>
                 <li>
                   <a href="https://nextzlog.dev">無線部開発班</a>
@@ -69,6 +71,13 @@ const Index: React.FC = () => (
           <p>
             <b>
               <a href="/komafes74/">駒場祭展示 わかる! 無線通信 企画サイト</a>
+            </b>
+          </p>
+          <p>
+            <b>
+              オリジナル作品の通信販売開始しました！{" "}
+              <a href="https://ja1zlo.base.shop/">BASE</a>,{" "}
+              <a href="https://ja1zlo.booth.pm/">BOOTH</a> から購入できます
             </b>
           </p>
           <p>
