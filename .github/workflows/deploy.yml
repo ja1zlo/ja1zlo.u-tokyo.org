@@ -31,5 +31,6 @@ jobs:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
+          mirror_args: --no-perms --overwrite
           local_path: out
           remote_path: public_html
