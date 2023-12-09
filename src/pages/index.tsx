@@ -14,14 +14,19 @@ const Index: React.FC = () => (
               <Link href="/fornewcomer">新入生の方へ</Link>
             </li>
             <li>
-              <Link href="/equipment">設備概要</Link> /{" "}
+              <Link href="/equipment">設備概要</Link>
+            </li>
+            <li>
               <Link href="/member">メンバー</Link>
             </li>
             <li>
-              コンテスト
+              イベント・コンテスト等
               <ul>
                 <li>
-                  <a href="/allja1/index.html">ALL JA1</a>
+                  <a href="/allja1/index.html">ALL JA1コンテスト</a>
+                </li>
+                <li>
+                  <a href="/komafes74/">駒場祭</a>
                 </li>
               </ul>
             </li>
@@ -42,24 +47,31 @@ const Index: React.FC = () => (
               </ul>
             </li>
             <li>
-              <a href="/history.html">活動記録</a>
-            </li>
-            <li>
-              <Link href="/socho">総長賞受賞</Link>
-            </li>
-            <li>
-              Twitter
+              受賞
               <ul>
                 <li>
-                  <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>　
-                </li>
-                <li>
-                  <a href="https://twitter.com/nextzlog">@nextzlog</a>　
+                  <a href="/socho">総長賞</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/link.html">リンク</a>　
+              <Link href="/blog">Blog</Link>
+            </li>
+            <li>
+              リンク
+              <ul>
+                <li>
+                  Twitter: <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>,{" "}
+                  <a href="https://twitter.com/nextzlog">@nextzlog</a>
+                </li>
+                <li>
+                  通販: <a href="https://ja1zlo.base.shop">BASE</a>,{" "}
+                  <a href="https://ja1zlo.booth.pm">BOOTH</a>　
+                </li>
+                <li>
+                  <a href="/link.html">他大学無線部</a>
+                </li>
+              </ul>
             </li>
           </ul>
         </nav>
@@ -70,11 +82,6 @@ const Index: React.FC = () => (
           <h2>広報</h2>
           <p>
             <b>
-              <a href="/komafes74/">駒場祭展示 わかる! 無線通信 企画サイト</a>
-            </b>
-          </p>
-          <p>
-            <b>
               オリジナル作品の通信販売開始しました！{" "}
               <a href="https://ja1zlo.base.shop/">BASE</a>,{" "}
               <a href="https://ja1zlo.booth.pm/">BOOTH</a> から購入できます
@@ -82,15 +89,8 @@ const Index: React.FC = () => (
           </p>
           <p>
             <b>
-              <a href="https://jarl-tokyo.org/wp2/top-page/comm00-2/comm00/informations/">
-                JARL東京都支部主催「無線サイエンスセミナー」が6/11に東京大学で開催されます
-              </a>
-            </b>
-          </p>
-          <p>
-            <b>
               <a href="https://www.fbnews.jp/202212/musennosekai/">
-                電子Webマガジン 「月刊FBニュース」 にて当クラブが紹介されました
+                Webマガジン 「月刊FBニュース」 にて当クラブが紹介されました
               </a>
             </b>
           </p>
