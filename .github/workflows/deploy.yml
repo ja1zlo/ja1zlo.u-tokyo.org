@@ -26,7 +26,7 @@ jobs:
         run: yarn install
 
       - name: build
-        run: yarn build && yarn export
+        run: yarn build
 
       - name: Deploy files via FTP
         uses: xarses/lftp-upload-action@v0.2.0
