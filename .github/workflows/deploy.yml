@@ -1,0 +1,35 @@
+name: Deploy website
+on:
+  push:
+    branches:
+      - master
+jobs:
+  deploy:
+    name: Deploy website
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Cache packages in node_modules
+        uses: actions/cache@v3
+        with:
+          path: node_modules
+          key: ${{ runner.OS }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.OS }}-node-
+
+      - name: install
+        run: yarn install
+
+      - name: build
+        run: yarn build && yarn export
+
+      - name: Deploy files via FTP
+        uses: xarses/lftp-upload-action@v0.2.0
+        with:
+          host: ${{ secrets.FTP_HOST }}
+          username: ${{ secrets.FTP_USER }}
+          password: ${{ secrets.FTP_PASS }}
+          local_path: out
+          remote_path: public_html
