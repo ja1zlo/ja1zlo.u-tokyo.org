@@ -3,7 +3,7 @@ import { useState } from "react";
 import styles from "./index.module.scss";
 import Image from "next/image";
 
-import CalendarImg from "./calendar.png";
+import CalendarImg from "./2024calendar.png";
 
 const ForNewcomer = () => (
   <article className={styles.article}>
@@ -19,17 +19,17 @@ const ForNewcomer = () => (
     </div>
 
     <section className={styles.shadowed_box}>
-      <h3>☆入部をご希望の方へ☆</h3>
+      <h3>☆入部をご検討の方へ☆</h3>
       新歓情報についての連絡のため、
       <br />
       <a
-        href="https://forms.gle/UGgrHVMPQYwStK5d6"
+        href="https://forms.gle/b2YGbUQhMrXcKWqn6"
         target="_blank"
         rel="noreferrer"
       >
         <b>こちら</b>
       </a>
-      のフォームより連絡先の登録にご協力お願いします。
+      のフォームより連絡先のご登録をお願いします。
       <br />
     </section>
 
