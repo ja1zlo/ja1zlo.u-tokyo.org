@@ -28,6 +28,11 @@ const Index: React.FC = () => (
                 <li>
                   <a href="/komafes74/">駒場祭</a>
                 </li>
+                <li>
+                  <Link href="/univ_onair_together">
+                    大学社団一斉オンエア月間
+                  </Link>
+                </li>
               </ul>
             </li>
             <li>
@@ -80,6 +85,12 @@ const Index: React.FC = () => (
       <section id={style.side}>
         <section>
           <h2>広報</h2>
+          <p>
+            <b>
+              2024年{" "}
+              <Link href="/univ_onair_together">大学社団一斉オンエア月間</Link>
+            </b>
+          </p>
           <p>
             <b>
               オリジナル作品の通信販売開始しました！{" "}
