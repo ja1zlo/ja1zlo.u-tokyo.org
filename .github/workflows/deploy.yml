@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - master
+  pull_request:
+    types: [opened, reopened]
+    
 jobs:
   deploy:
     name: Deploy website
@@ -28,8 +31,19 @@ jobs:
       - name: build
         run: yarn build
 
+      - name: Tattoo, package and deploy to test server
+        if: ${{ github.event_name == 'pull_request' }}
+        run: |
+          echo "Commit SHA: ${GITHUB_SHA}" > ./out/info.txt
+          echo "Ref: ${GITHUB_REF}" >> ./out/info.txt
+          cd out
+          zip ../out.zip *
+          cd ..
+          curl -u ${{ secrets.TEST_SERVER_CRED }} -X POST -H "Content-Type: application/zip" --data-binary @out.zip ${{ secrets.TEST_SERVER_URL }}
+
       - name: Deploy files via FTP
         uses: xarses/lftp-upload-action@v0.2.0
+        if: ${{ github.event_name == 'push' && github.ref == 'refs/heads/master' }}
         with:
           host: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
