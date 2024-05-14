@@ -1,5 +1,8 @@
 /** @type {import('prettier').Config} */
 module.exports = {
+  plugins: [
+    "prettier-plugin-astro",
+  ],
   printWidth: 80,
   tabWidth: 2,
   useTabs: false,
@@ -13,15 +16,9 @@ module.exports = {
 
   overrides: [
     {
-      files: "*.md",
+      files: "*.astro",
       options: {
-        parser: "markdown-nocjsp",
-      },
-    },
-    {
-      files: "*.mdx",
-      options: {
-        parser: "mdx-nocjsp",
+        parser: "astro",
       },
     },
   ],
