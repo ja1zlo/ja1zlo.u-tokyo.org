@@ -3,7 +3,6 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "postinstall": "husky install",
     "dev": "astro dev",
     "start": "astro dev",
     "build": "astro check && astro build",
@@ -11,7 +10,8 @@
     "astro": "astro",
     "lint": "eslint src",
     "lint:fix": "eslint src --fix",
-    "format": "prettier --write src"
+    "format": "prettier --write src",
+    "prepare": "husky"
   },
   "dependencies": {
     "@astrojs/check": "^0.6.0",
@@ -36,6 +36,8 @@
     "@typescript-eslint/parser": "^7.9.0",
     "eslint": "^9.2.0",
     "eslint-plugin-astro": "^1.2.0",
+    "husky": "^9.0.11",
+    "lint-staged": "^15.2.2",
     "prettier": "^3.2.5",
     "prettier-plugin-astro": "^0.13.0"
   }
