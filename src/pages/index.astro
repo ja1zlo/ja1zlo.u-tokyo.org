@@ -1,21 +1,20 @@
-import Title from "components/title";
-import Link from "next/link";
-import style from "./index.module.scss";
+---
+import Layout from "@/layouts/default.astro";
+---
 
-const Index: React.FC = () => (
-  <article id={style.article}>
-    <Title title="" />
-    <div id={style.content}>
-      <section id={style.main}>
+<Layout title="hoge">
+  <article id="article">
+    <div id="content">
+      <section id="main">
         <h1>東大無線部 JA1ZLO Web</h1>
         <nav>
           <ul>
             <li>
-              <Link href="/fornewcomer">新入生の方へ</Link>
+              <a href="/fornewcomer">新入生の方へ</a>
             </li>
             <li>
-              <Link href="/equipment">設備概要</Link> /{" "}
-              <Link href="/member">メンバー</Link>
+              <a href="/equipment">設備概要</a> /{" "}
+              <a href="/member">メンバー</a>
             </li>
             <li>
               コンテスト
@@ -43,27 +42,27 @@ const Index: React.FC = () => (
               <a href="/history.html">活動記録</a>
             </li>
             <li>
-              <Link href="/socho">総長賞受賞</Link>
+              <a href="/socho">総長賞受賞</a>
             </li>
             <li>
               Twitter
               <ul>
                 <li>
-                  <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>　
+                  <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/nextzlog">@nextzlog</a>　
+                  <a href="https://twitter.com/nextzlog">@nextzlog</a>
                 </li>
               </ul>
             </li>
             <li>
-              <a href="/link.html">リンク</a>　
+              <a href="/link.html">リンク</a>
             </li>
           </ul>
         </nav>
       </section>
 
-      <section id={style.side}>
+      <section id="side">
         <section>
           <h2>広報</h2>
           <p>
@@ -73,7 +72,9 @@ const Index: React.FC = () => (
           </p>
           <p>
             <b>
-              <a href="https://jarl-tokyo.org/wp2/top-page/comm00-2/comm00/informations/">
+              <a
+                href="https://jarl-tokyo.org/wp2/top-page/comm00-2/comm00/informations/"
+              >
                 JARL東京都支部主催「無線サイエンスセミナー」が6/11に東京大学で開催されます
               </a>
             </b>
@@ -117,6 +118,80 @@ const Index: React.FC = () => (
       <small>Since 2004/3/22</small>
     </p>
   </article>
-);
+</Layout>
 
-export default Index;
+<style>
+  #article {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+  #content {
+    display: flex;
+    width: 100%;
+
+    #main {
+      flex-grow: 1;
+      padding: 20px;
+
+      nav {
+        ul {
+          padding-left: 1em;
+        }
+        li {
+          list-style: none;
+          &::before {
+            font-size: 0.9em;
+            margin-right: 3px;
+          }
+        }
+        & > ul > li {
+          &::before {
+            content: "■";
+          }
+          & > ul > li {
+            &::before {
+              content: "□";
+            }
+          }
+        }
+      }
+    }
+
+    #side {
+      max-width: 400px;
+      margin-left: 20px;
+
+      border-left: 2px solid #ccc;
+
+      h2 {
+        background-color: #ccc;
+        margin-top: 0;
+        padding-left: 10px;
+      }
+      p {
+        margin-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #content {
+      flex-direction: column;
+      #main {
+        margin-bottom: 20px;
+      }
+      #side {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        border-left: none;
+        h2 {
+          width: 100%;
+          max-width: none;
+        }
+      }
+    }
+  }
+</style>
