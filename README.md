@@ -1,38 +1,38 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+# JA1ZLO website
 
-## Getting Started
+https://ja1zlo.u-tokyo.org/
 
-First, run the development server:
+## 編集手順
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
+### 必要なツール
+
+- Linux(またはWSL) を推奨します
+- yarn
+
+### ファイル構成
+
+`src/pages/`以下に各ページ、`public/`以下にその他の静的ファイルが入っています。
+ページは`.tsx`, `.md`, `.mdx`の形式に対応しています。
+
+### プレビュー方法
+
+下記コマンドを実行してください。
+
+```
+yarn # 必要なパッケージをインストールする。(毎度行う必要はない)
+
+yarn dev # サイトのプレビューサーバーを起動する。ブラウザで http://localhost:3000/ から確認できる。
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### pull-request
 
-You can start editing the page by modifying `pages/index.tsx`. The page auto-updates as you edit the file.
+変更はpull-request経由でおねがいします。
+(必要に応じてレビューをしたのち、)マージをすればよいです。
 
-[API routes](https://nextjs.org/docs/api-routes/introduction) can be accessed on [http://localhost:3000/api/hello](http://localhost:3000/api/hello). This endpoint can be edited in `pages/api/hello.ts`.
+## 編集にあたっての留意点
 
-The `pages/api` directory is mapped to `/api/*`. Files in this directory are treated as [API routes](https://nextjs.org/docs/api-routes/introduction) instead of React pages.
-
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
-
-## Learn More
-
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- masterブランチへの変更は自動で本番環境にアップロードされます。
+- 静的ファイルは`public/`へ入れますが、 **大きなファイルは可能な限り避けてください。**
+  - デプロイスクリプトの都合で毎度全ファイルが転送されてしまうため。
+- `old_public/`は開発環境で閲覧する用途のみに使われています。ここを編集してもウェブサイトは更新されません。
+  - 特に必要な場合は手動でアップロード
