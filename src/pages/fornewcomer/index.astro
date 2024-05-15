@@ -4,6 +4,8 @@ import { Image } from "astro:assets";
 
 import feelradio from "./_images/feelradio.gif";
 import CalendarImg from "./_images/2024calendar.png";
+
+type ImportedImage = Promise<typeof import("*.jpg") | typeof import("*.png")>;
 ---
 
 <Layout title="新入生の方へ">
@@ -233,7 +235,7 @@ import CalendarImg from "./_images/2024calendar.png";
       </p>
       <div class="gallery">
         {
-          [
+          ([
             [
               import("./_images/gallery_antenna1.jpg"),
               "駒場キャンパス内の学生会館。屋上に建っているアンテナは東大無線部所有のものです。",
@@ -258,7 +260,7 @@ import CalendarImg from "./_images/2024calendar.png";
               import("./_images/gallery_field2.jpg"),
               "8月に行われるフィールドデーコンテストの一風景。腹が減っては戦は出来ぬ、ですね。",
             ],
-          ].map((e) => (
+          ] as [ImportedImage, string][]).map((e) => (
             <div class="imagepopup_btn">
               <div class="btn_open">
                 <Image
@@ -277,13 +279,6 @@ import CalendarImg from "./_images/2024calendar.png";
           style={{ display: "none" }}
           aria-hidden="true"
         >
-          <div class="popup_content">
-            <img src="/image/gallery_field2.jpg" />
-            <br />▲
-          </div>
-          <button id="popup_closebtn" type="button" class="btn_close">
-            閉じる
-          </button>
         </div>
       </div>
     </section>
@@ -291,25 +286,27 @@ import CalendarImg from "./_images/2024calendar.png";
 </Layout>
 
 <script>
-  const popup = document.getElementById("imagepopup");
-  const closebtn = document.getElementById("popup_closebtn");
-  const btns = document.getElementsByClassName("imagepopup_btn");
+  const popup = document.getElementById("imagepopup")!;
+  const btns = document.getElementsByClassName("imagepopup_btn")!;
 
   Array.from(btns).forEach((btn) => {
     btn.addEventListener("click", (e) => {
-      const img = e.target.closest("div").querySelector("img");
+      const img = (e.target as (HTMLElement | null))?.closest!("div")?.querySelector("img")!;
       const comment = img.alt;
       const src = img.src;
+      popup.innerHTML = `
+          <div class="popup_content">
+            <img src="${src}" alt="${comment}" />
+            <br />▲${comment}
+          </div>
+          <button type="button" class="btn_close">
+            閉じる
+          </button>
+          `;
       popup.style.display = "block";
-      popup.querySelector("img").src = src;
-      popup.querySelector("img").alt = comment;
-      popup.querySelector("br").nextSibling.nodeValue = comment;
     });
   });
 
-  closebtn.addEventListener("click", () => {
-    popup.style.display = "none";
-  });
   popup.addEventListener("click", () => {
     popup.style.display = "none";
   });

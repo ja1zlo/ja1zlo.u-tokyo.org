@@ -1,6 +1,8 @@
 ---
 import Layout from "@/layouts/default.astro";
-import Image from "astro:assets";
+import {Image} from "astro:assets";
+
+import PosterImage from "./_images/poster.png";
 ---
 
 <Layout>
@@ -56,7 +58,7 @@ import Image from "astro:assets";
     <h3>Coming soon...</h3>
     <h2>展示紹介ポスター</h2>
     <div>
-      <img id="poster" src="/komafes74/poster.png" alt="" />
+      <Image id="poster" src={PosterImage} alt="" />
     </div>
   </article>
 </Layout>
@@ -77,7 +79,7 @@ import Image from "astro:assets";
 
   img#poster {
     width: 100%;
-    background-image: url("/komafes74/poster_bg.jpg");
+    background-image: url("./_images/poster_bg.jpg");
     background-size: cover;
   }
 

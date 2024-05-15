@@ -7,14 +7,14 @@ export default defineConfig({
   integrations: [mdx()],
   markdown: {
     remarkPlugins: [
-      myMarkdownPlugin ,
+      myMarkdownPlugin,
     ],
     extendDefualtPlugins: true,
   },
 });
 
 function myMarkdownPlugin () {
-  return function (tree, file) {
+  return function (_tree, file) {
     const fm = file.data.astro.frontmatter;
     if (!fm.layout) {
       fm.layout = '@/layouts/markdown.astro'

@@ -17,6 +17,7 @@ async function main() {
         res.writeHead(200, { "Content-Type": mimetype });
       }
       fs.createReadStream(path).pipe(res);
+      res.end();
     } else {
       http
         .request(
