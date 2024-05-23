@@ -1,6 +1,4 @@
 import { Image } from "astro:assets";
-import hentenna from "./_images/hentenna.png";
-import hentenna_shashin from "./_images/hentenna_shashin.jpeg";
 
 # テレビ受信用ヘンテナを作った話
 
@@ -13,7 +11,11 @@ import hentenna_shashin from "./_images/hentenna_shashin.jpeg";
 
 ## ヘンテナとは
 
-<Image src={hentenna} style={{ width: "10em" }} alt="" />
+<Image
+  src={import("./_images/hentenna.png")}
+  style={{ width: "10em" }}
+  alt=""
+/>
 
 ヘンテナは、上の図のような形状のアンテナです。
 図の真ん中のエレメントの中心の赤い点が給電点になります。
@@ -38,7 +40,11 @@ SWRも利得も申し分なさそうです。
 ケーブルの片方の端の端子を切り落として使ったのですが、ケーブルが十分長かったので、半分に切って2本にすればよかったと思いました。
 寸法に合わせて切って、同軸ケーブルを取り付け、完成したものがこちらです。
 
-<Image src={hentenna_shashin} style={{ width: "20em" }} alt="" />
+<Image
+  src={import("./_images/hentenna_shashin.jpeg")}
+  style={{ width: "20em" }}
+  alt=""
+/>
 
 ## 使ってみた
 
