@@ -80,9 +80,9 @@ import ImageStraight from "./_images/straight.webp";
                 [["K", "-.-"]],
               ],
             ] as [string, string][][][]
-          ).map(paragraph => (
+          ).map((paragraph) => (
             <p>
-              {paragraph.map(line => (
+              {paragraph.map((line) => (
                 <>
                   {line.map(([char, morse]) => (
                     <span>
