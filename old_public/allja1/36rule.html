@@ -3,6 +3,7 @@
 
 <head>
   <title>ALLJA1コンテスト</title>
+  <meta charset="utf-8">
   <meta name="GENERATOR" content="HTML それは手打ちで書く物">
   <meta http-equiv="Content-Style-Type" content="text/css">
   <link rel="stylesheet" href="../mystyle.css" type="text/css">
@@ -204,7 +205,7 @@
               <ul>
                 全ての個人参加者は<b>自動的に</b>個人総合部門にも参加となる<br>
                 <br>
-                <font size="-1" color="red">A〜Jの複数部門に参加している場合は、各周波数帯での交信局数の和とマルチプライヤーの和の積が総合部門の点数となる</font><br>
+                <font size="-1" color="red">A~Jの複数部門に参加している場合は、各周波数帯での交信局数の和とマルチプライヤーの和の積が総合部門の点数となる</font><br>
               </ul>
               <br>
             </ul>
@@ -450,7 +451,7 @@
               <br>
               <b>・電信</b>……CQ JA1 TEST<br>
               <br>
-              <b>・デジタル</b>……<b>CQ TEST</b><br>
+              <b>・デジタル</b>……<b>CQ TE</b><br>
             </ul>
             <br>
             <font color="#000090"><b>10. 交信相手方に送信するコンテストナンバー</b></font><br>
@@ -464,6 +465,7 @@
                 <b>・1エリア外部門</b>…RS(T)+府県支庁ナンバー<br>
                 <br>
                 <font size="-1" color="red">（東京都特別区、横浜、川崎、相模原、千葉、さいたま市は区番号）</font><br>
+                <font size="-1" color="red">デジタル部門についてはdBを交換し、ログのRST欄には"599"とご記入ください</font><br>
               </ul>
               <br>
             </ul>
@@ -589,12 +591,17 @@
               電子ログの作成はロギングソフト<a href="http://www.zlog.org/">zLog</a>が便利です。<br><br>
               <font size="-1" color="blue">書類提出用ウェブサイトでは下記のフォーマットでの提出を推奨します</font><br>
               <br>
-                <font size="-1" color="red"><b>（推奨）</b>ADIF(ADI/ADX)、ZLOGバイナリファイル、CTESTWINバイナリファイル(LG8)、<br>　　　　JARLサマリーシートR2.0</font><br>
+                <font size="-1" color="red"><b>（推奨）</b>ADIF(ADI/ADX)、ZLOGバイナリファイル(ZLO/ZLOX)、CTESTWINバイナリファイル(LG8)、<br>　　　　JARLサマリーシートR2.0以降</font><br>
                 <br>
                 <font size="-1" color="blue">
-                  　　　　※.zloファイルを用いて<b>デジタル部門</b>の電子ログを提出する場合、<br>
+                  　　　　※.zlo/.ZLOXファイルを用いて<b>デジタル部門</b>の電子ログを提出する場合、<br>
                   　　　　　<b>モードを「RTTY」で代用して</b>提出してください<br>
                 </font>
+
+                <font size="-1" color="blue">
+                  　　　　※.ZLOXファイルのFT4/8については現在未対応です。ただいま、システムの改良について、zLog令和版との連携を行っております。<br>
+                </font>
+
                 <br>
                 <font size="-1" color="red"><b>（避けるべき）</b>JARLサマリーシートR1.0、ZLOGやCTESTWINのテキストファイル、<br>　　　　　　　Cabrillo v3 （CQWWコンテストと同じQSOテンプレート）</font><br>
                 <br>
@@ -638,7 +645,7 @@
               <a href="mailto:master@ja1zlo.u-tokyo.org">master@ja1zlo.u-tokyo.org</a>
               へどうぞ<br>
               それぞれのページに関するお問い合わせは、それぞれのページに表示されている問い合わせ先へどうぞ。<br>
-              All Rights Reserved, Copyright (c) 2002-2021 The University of Tokyo Amateur Radio Club
+              All Rights Reserved, Copyright (c) 2002-2024 The University of Tokyo Amateur Radio Club
             </font>
           </div>
         </td>
