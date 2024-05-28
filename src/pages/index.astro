@@ -1,23 +1,22 @@
-import Title from "components/title";
-import Link from "next/link";
-import style from "./index.module.scss";
+---
+import Layout from "@/layouts/default.astro";
+---
 
-const Index: React.FC = () => (
-  <article id={style.article}>
-    <Title title="" />
-    <div id={style.content}>
-      <section id={style.main}>
+<Layout title="">
+  <article id="article">
+    <div id="content">
+      <section id="main">
         <h1>東大無線部 JA1ZLO Web</h1>
         <nav>
           <ul>
             <li>
-              <Link href="/fornewcomer">新入生の方へ</Link>
+              <a href="/fornewcomer">新入生の方へ</a>
             </li>
             <li>
-              <Link href="/equipment">設備概要</Link>
+              <a href="/equipment">設備概要</a>
             </li>
             <li>
-              <Link href="/member">メンバー</Link>
+              <a href="/member">メンバー</a>
             </li>
             <li>
               イベント・コンテスト等
@@ -29,9 +28,7 @@ const Index: React.FC = () => (
                   <a href="/komafes74/">駒場祭</a>
                 </li>
                 <li>
-                  <Link href="/univ_onair_together">
-                    大学社団一斉オンエア月間
-                  </Link>
+                  <a href="/univ_onair_together">大学社団一斉オンエア月間</a>
                 </li>
               </ul>
             </li>
@@ -60,18 +57,20 @@ const Index: React.FC = () => (
               </ul>
             </li>
             <li>
-              <Link href="/blog">Blog</Link>
+              <a href="/blog">Blog</a>
             </li>
             <li>
               リンク
               <ul>
                 <li>
-                  Twitter: <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>,{" "}
-                  <a href="https://twitter.com/nextzlog">@nextzlog</a>
+                  Twitter: <a href="https://twitter.com/JA1ZLO">@JA1ZLO</a>, <a
+                    href="https://twitter.com/nextzlog">@nextzlog</a
+                  >
                 </li>
                 <li>
-                  通販: <a href="https://ja1zlo.base.shop">BASE</a>,{" "}
-                  <a href="https://ja1zlo.booth.pm">BOOTH</a>　
+                  通販: <a href="https://ja1zlo.base.shop">BASE</a>, <a
+                    href="https://ja1zlo.booth.pm">BOOTH</a
+                  >
                 </li>
                 <li>
                   <a href="/link.html">他大学無線部</a>
@@ -82,13 +81,13 @@ const Index: React.FC = () => (
         </nav>
       </section>
 
-      <section id={style.side}>
+      <section id="side">
         <section>
           <h2>広報</h2>
           <p>
             <b>
               2024年{" "}
-              <Link href="/univ_onair_together">大学社団一斉オンエア月間</Link>
+              <a href="/univ_onair_together">大学社団一斉オンエア月間</a>
             </b>
           </p>
           <p>
@@ -137,6 +136,80 @@ const Index: React.FC = () => (
       <small>Since 2004/3/22</small>
     </p>
   </article>
-);
+</Layout>
 
-export default Index;
+<style>
+  #article {
+    width: 100% !important;
+    max-width: none !important;
+    margin: 0 !important;
+  }
+  #content {
+    display: flex;
+    width: 100%;
+
+    #main {
+      flex-grow: 1;
+      padding: 20px;
+
+      nav {
+        ul {
+          padding-left: 1em;
+        }
+        li {
+          list-style: none;
+          &::before {
+            font-size: 0.9em;
+            margin-right: 3px;
+          }
+        }
+        & > ul > li {
+          &::before {
+            content: "■";
+          }
+          & > ul > li {
+            &::before {
+              content: "□";
+            }
+          }
+        }
+      }
+    }
+
+    #side {
+      max-width: 400px;
+      margin-left: 20px;
+
+      border-left: 2px solid #ccc;
+
+      h2 {
+        background-color: #ccc;
+        margin-top: 0;
+        padding-left: 10px;
+      }
+      p {
+        margin-left: 10px;
+        padding-right: 10px;
+      }
+    }
+  }
+
+  @media screen and (max-width: 600px) {
+    #content {
+      flex-direction: column;
+      #main {
+        margin-bottom: 20px;
+      }
+      #side {
+        width: 100%;
+        max-width: none;
+        margin-left: 0;
+        border-left: none;
+        h2 {
+          width: 100%;
+          max-width: none;
+        }
+      }
+    }
+  }
+</style>

@@ -1,0 +1,10 @@
+---
+import DefaultLayout from "@/layouts/default.astro";
+const { title } = Astro.props.frontmatter;
+---
+
+<DefaultLayout title={title}>
+  <article>
+    <slot />
+  </article>
+</DefaultLayout>

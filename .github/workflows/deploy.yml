@@ -11,22 +11,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
 
-      - name: Cache packages in node_modules
-        uses: actions/cache@v3
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: laest
+
+      - uses: pnpm/action-setup@v4
+        name: Install pnpm
+        with:
+          version: 8
+          run_install: false
+
+      - name: Get pnpm store directory
+        shell: bash
+        run: |
+          echo "STORE_PATH=$(pnpm store path --silent)" >> $GITHUB_ENV
+
+      - uses: actions/cache@v4
+        name: Setup pnpm cache
         with:
           path: |
             ./node_modules
-            ./.next/cache
-            ~/.cache/yarn
-          key: ${{ runner.OS }}-node-${{ github.sha }}
+            ./dist
+            ${{ env.STORE_PATH }}
+          key: ${{ runner.os }}-pnpm-store-${{ github.sha }}
           restore-keys: |
-            ${{ runner.OS }}-node-
+            ${{ runner.os }}-pnpm-store-
 
-      - name: install
-        run: yarn install
+      - name: Install dependencies
+        run: pnpm install --ignore-scripts
 
       - name: build
-        run: yarn build
+        run: pnpm build
 
       - name: Deploy files via FTP
         uses: xarses/lftp-upload-action@v0.2.0
@@ -35,5 +51,5 @@ jobs:
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
           mirror_args: --no-perms --overwrite
-          local_path: out
+          local_path: dist
           remote_path: public_html
