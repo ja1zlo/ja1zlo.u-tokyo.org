@@ -1,5 +1,12 @@
 ---
 import Layout from "@/layouts/default.astro";
+
+import { getCollection } from "astro:content";
+import { date_str } from "@/util";
+
+const news_entries = (await getCollection("news"))
+  .sort((a, b) => +b.data.date - +a.data.date)
+  .slice(0, 5);
 ---
 
 <Layout title="">
@@ -82,8 +89,25 @@ import Layout from "@/layouts/default.astro";
       </section>
 
       <section id="side">
-        <section>
+        <section id="news">
           <h2>広報</h2>
+          {
+            news_entries.map((entry) => (
+              <p>
+                <span class="date">{date_str(entry.data.date)}</span>
+                <b>
+                  {entry.data.url ? (
+                    <a href={entry.data.url}>{entry.data.title}</a>
+                  ) : (
+                    entry.data.title
+                  )}
+                </b>
+              </p>
+            ))
+          }
+          <p style={{ textAlign: "right" }}>
+            <a href="/news"> &gt;&gt;&gt;過去のお知らせ</a>
+          </p>
           <p>
             <b>
               2024年{" "}
@@ -210,6 +234,12 @@ import Layout from "@/layouts/default.astro";
           max-width: none;
         }
       }
+    }
+  }
+
+  #news {
+    span.date {
+      font-size: 0.8em;
     }
   }
 </style>

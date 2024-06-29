@@ -1,0 +1,33 @@
+---
+import Layout from "@/layouts/default.astro";
+
+import { getCollection } from "astro:content";
+import { date_str } from "@/util";
+
+const news_entries = (await getCollection("news"))
+  .sort((a, b) => +b.data.date - +a.data.date)
+  .slice(0, 5);
+---
+
+<Layout title="">
+  <article id="article">
+    <h1>お知らせアーカイブ</h1>
+
+    <ul>
+      {
+        news_entries.map((entry) => (
+          <li>
+            {date_str(entry.data.date)}
+            <b>
+              {entry.data.url ? (
+                <a href={entry.data.url}>{entry.data.title}</a>
+              ) : (
+                entry.data.title
+              )}
+            </b>
+          </li>
+        ))
+      }
+    </ul>
+  </article>
+</Layout>
