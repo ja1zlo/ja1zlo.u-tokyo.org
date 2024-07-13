@@ -1,5 +1,12 @@
 ---
 import Layout from "@/layouts/default.astro";
+
+import { getCollection } from "astro:content";
+import { date_str } from "@/util";
+
+const news_entries = (await getCollection("news"))
+  .sort((a, b) => +b.data.date - +a.data.date)
+  .slice(0, 5);
 ---
 
 <Layout title="">
@@ -82,43 +89,26 @@ import Layout from "@/layouts/default.astro";
       </section>
 
       <section id="side">
-        <section>
+        <section id="news">
           <h2>広報</h2>
-          <p>
-            <b>
-              2024年{" "}
-              <a href="/univ_onair_together">大学社団一斉オンエア月間</a>
-            </b>
-          </p>
-          <p>
-            <b>
-              オリジナル作品の通信販売開始しました！{" "}
-              <a href="https://ja1zlo.base.shop/">BASE</a>,{" "}
-              <a href="https://ja1zlo.booth.pm/">BOOTH</a> から購入できます
-            </b>
-          </p>
-          <p>
-            <b>
-              <a href="https://www.fbnews.jp/202212/musennosekai/">
-                Webマガジン 「月刊FBニュース」 にて当クラブが紹介されました
-              </a>
-            </b>
-          </p>
-          <p>
-            <b>
-              <a href="/allja1/36rule.html">第36回ALLJA1コンテスト規約</a>
-            </b>
-            <br />
-            <b>
-              <a href="https://allja1.org">ALLJA1の書類提出はこちら</a>
-            </b>
-            <br />
-            <b>
-              <a href="/rt/rt1.html">
-                第１回リアルタイムコンテスト パブリックコメント募集中
-              </a>
-            </b>
-            <br />
+          <ul>
+            {
+              news_entries.map((entry) => (
+                <li>
+                  <span class="date">{date_str(entry.data.date)}</span>
+                  <b>
+                    {entry.data.url ? (
+                      <a href={entry.data.url}>{entry.data.title}</a>
+                    ) : (
+                      entry.data.title
+                    )}
+                  </b>
+                </li>
+              ))
+            }
+          </ul>
+          <p style={{ textAlign: "right" }}>
+            <a href="/news">&gt;&gt;&gt;過去のお知らせ</a>
           </p>
         </section>
         <section>
@@ -210,6 +200,19 @@ import Layout from "@/layouts/default.astro";
           max-width: none;
         }
       }
+    }
+  }
+
+  #news {
+    ul {
+      padding-left: 1em;
+      li {
+        list-style: none;
+      }
+    }
+
+    span.date {
+      font-size: 0.8em;
     }
   }
 </style>
