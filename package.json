@@ -24,7 +24,7 @@
   "lint-staged": {
     "*": [
       "eslint --fix",
-      "prettier --write"
+      "prettier src --write"
     ]
   },
   "devDependencies": {
