@@ -1,0 +1,102 @@
+---
+import { getImage } from "astro:assets";
+import Layout from "@/layouts/default.astro";
+import { Image } from "astro:assets";
+
+import PosterImage from "./_images/poster.svg";
+import PosterImageBg from "./_images/poster_bg.jpg";
+const PosterImageBgPath = await getImage({
+  src: PosterImageBg,
+  format: "webp",
+});
+---
+
+<Layout>
+  <article id="article">
+    <p>第75回駒場祭企画</p>
+    <h1 id="title">わかる! 無線通信</h1>
+    <span id="title_sub">Wakaru! Wireless Communications</span>
+    <p>
+      東大無線部は
+      <a
+        style={{ textDecoration: "underline" }}
+        href="https://www.komabasai.net/75/visitor/"
+      >
+        第75回 駒場祭
+      </a>
+      に出展します!
+    </p>
+    <dl>
+      <dt>日程</dt>
+      <dd>2024/11/22(金) - 2024/11/24(日)</dd>
+
+      <dt>展示教室</dt>
+      <dd>13号館 1311教室</dd>
+
+      <dt>場所</dt>
+      <dd>東京大学 駒場キャンパス</dd>
+    </dl>
+    <h2>展示ハイライト</h2>
+    <h3>交信体験</h3>
+    <p>
+      本来は従事者免許が必要なアマチュア無線ですが、免許をお持ちでない方も、部員の立会いのもとで交信を体験いただくことができます。
+      <br />
+      実際に日本全国のアマチュア無線局と交信することができます!
+      <br />
+      <small>
+        本企画は
+        <a
+          href="https://www.tele.soumu.go.jp/j/sys/others/ama_experience/leaflet/index.htm"
+        >
+          交信体験制度
+        </a>
+        を利用したものです。
+      </small>
+    </p>
+    <h3>アマチュア無線の紹介</h3>
+    <p>
+      アマチュア無線について、その歴史や現在の状況、またアマチュア無線の魅力について紹介します。
+    </p>
+    <h3>部活動紹介</h3>
+    <p>
+      普段の部員の活動として行われる、アマチュア無線のほか電子工作やソフトウェア開発などについて紹介します。
+    </p>
+    <h2>展示紹介ポスター</h2>
+    <div>
+      <Image
+        id="poster"
+        src={PosterImage}
+        alt=""
+        style={{ backgroundImage: `url(${PosterImageBgPath.src})` }}
+      />
+    </div>
+
+    <p>
+      <a href="../74/">昨年のようす</a>
+    </p>
+  </article>
+</Layout>
+
+<style>
+  h1#title {
+    font-size: 3rem;
+    margin: 0;
+    line-height: 1.1;
+  }
+
+  #title_sub {
+    font-size: 1.2rem;
+    margin: 0;
+    line-height: 1.1;
+    font-weight: bold;
+  }
+
+  img#poster {
+    width: 100%;
+    background-size: cover;
+  }
+
+  #article dt {
+    font-weight: bold;
+  }
+</style>
