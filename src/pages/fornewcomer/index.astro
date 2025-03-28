@@ -3,7 +3,7 @@ import Layout from "@/layouts/default.astro";
 import { Image } from "astro:assets";
 
 import feelradio from "./_images/feelradio.gif";
-import CalendarImg from "./_images/2024calendar.png";
+import CalendarImg from "./_images/202504calendar.webp";
 
 type ImportedImage = Promise<typeof import("*.jpg") | typeof import("*.png")>;
 ---
@@ -21,17 +21,26 @@ type ImportedImage = Promise<typeof import("*.jpg") | typeof import("*.png")>;
       新歓情報についての連絡のため、
       <br />
       <a
-        href="https://forms.gle/b2YGbUQhMrXcKWqn6"
+        href="https://forms.gle/bekbw26wvjrZer9p9"
         target="_blank"
         rel="noreferrer"
+        class="contact_link"
       >
-        <b>こちら</b>
+        こちら
       </a>
-      のフォームより連絡先のご登録をお願いします。
+      のフォームより連絡先のご登録をお願いします。<br />
+      また、<a
+        href="https://lin.ee/yxHogId"
+        target="_blank"
+        rel="noreferrer"
+        class="contact_link">公式LINE</a
+      >でも最新情報をお届けしています。<br />
+      質問がある方も、公式LINEからお気軽にお問い合わせください。
       <br />
     </section>
 
     <div>
+      <h2>2025年度新歓情報</h2>
       <Image src={CalendarImg} alt="新歓日程" />
     </div>
 
@@ -121,7 +130,7 @@ type ImportedImage = Promise<typeof import("*.jpg") | typeof import("*.png")>;
             部会
             <br />
             <small>
-              毎週火曜日18:30〜。イベントの準備をしたり、通常交信をしたり、ゆるりと活動しています。
+              毎週金曜日18:45〜。イベントの準備をしたり、通常交信をしたり、ゆるりと活動しています。
             </small>
           </li>
         </ul>
@@ -150,6 +159,13 @@ type ImportedImage = Promise<typeof import("*.jpg") | typeof import("*.png")>;
             <br />
             <small>
               東大無線部主催のコンテスト。規約改訂や結果の集計も自分たちでやります。
+            </small>
+          </li>
+          <li class="list_sche">
+            五月祭
+            <br />
+            <small>
+              東大無線部も出展し、アマチュア無線の紹介やモールス練習体験を行います。
             </small>
           </li>
         </ul>
@@ -356,6 +372,11 @@ type ImportedImage = Promise<typeof import("*.jpg") | typeof import("*.png")>;
     background: #c6e4ff;
     border-bottom: solid 6px #aac5de;
     border-radius: 9px;
+  }
+
+  .contact_link {
+    font-weight: bold;
+    text-decoration: underline;
   }
 
   /* スケジュール箇条書き設定 */
