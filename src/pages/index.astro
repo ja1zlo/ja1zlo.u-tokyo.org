@@ -1,5 +1,8 @@
 ---
 import Layout from "@/layouts/default.astro";
+import { Image } from "astro:assets";
+
+import CalendarImg from "./fornewcomer/_images/202504calendar.webp";
 
 import { getCollection } from "astro:content";
 import { date_str } from "@/util";
@@ -117,11 +120,19 @@ const news_entries = (await getCollection("news"))
         <section>
           <h2>見学希望の方へ</h2>
           <p>
+            毎週金曜日の18:45から、駒場・本郷の両キャンパスにて部会を開催しています。<br
+            />
+            部活動の雰囲気を知りたい方は、ぜひ一度足を運んでみてください!
+          </p>
+          <p>
             年間を通じて部員を募集しています(他大学OK)
             <br />
             見学も可能です。お気軽に
             <a href="mailto:zlo.utokyo@gmail.com">ご連絡</a>下さい!
           </p>
+          <div>
+            <Image src={CalendarImg} alt="新歓日程" />
+          </div>
         </section>
       </section>
     </div>
