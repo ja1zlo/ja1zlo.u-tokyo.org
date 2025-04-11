@@ -38,8 +38,7 @@ ALL JA1コンテストは、毎年6月の第4土曜日に行われている、1�
 
 # レコード記録
 
-- [ALLJA1コンテストのレコード（第11回までの規約 でのレコードです](https://ja1zlo.u-tokyo.org/allja1/ja1reco.html)
-
+- [ALLJA1コンテストのレコード（第11回までの規約でのレコードです）](https://ja1zlo.u-tokyo.org/allja1/ja1reco.html)
 # ロギングソフトについて
 
 ALL JA1コンテストでは [コンテスト用ロギングソフトzlog](https://zlog.org) の使用を推奨しています
