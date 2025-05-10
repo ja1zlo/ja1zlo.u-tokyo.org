@@ -45,11 +45,10 @@ jobs:
         run: pnpm build
 
       - name: Deploy files via FTP
-        uses: xarses/lftp-upload-action@v0.2.0
+        uses: SamKirkland/FTP-Deploy-Action@v4.3.5
         with:
-          host: ${{ secrets.FTP_HOST }}
+          server: ${{ secrets.FTP_HOST }}
           username: ${{ secrets.FTP_USER }}
           password: ${{ secrets.FTP_PASS }}
-          mirror_args: --no-perms --overwrite
-          local_path: dist
-          remote_path: public_html
+          local-dir: ./dist/
+          remote_path: ./public_html/
