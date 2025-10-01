@@ -4,9 +4,9 @@ import Layout from "@/layouts/default.astro";
 import { getCollection } from "astro:content";
 import { date_str } from "@/util";
 
-const news_entries = (await getCollection("news"))
-  .sort((a, b) => +b.data.date - +a.data.date)
-  .slice(0, 5);
+const news_entries = (await getCollection("news")).sort(
+  (a, b) => +b.data.date - +a.data.date
+);
 ---
 
 <Layout title="">
